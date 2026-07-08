@@ -5,8 +5,8 @@
     <link>https://ultraman91.github.io/run-podcast/</link>
     <language>zh-cn</language>
     <itunes:author>ultraman91</itunes:author>
-    <description>把整理好的学习文档转成语音，跑步时离线听。</description>
-    <itunes:summary>把整理好的学习文档转成语音，跑步时离线听。</itunes:summary>
+    <description>把整理好的学习文档转成语音，跑步时用 Apple Watch 离线听。</description>
+    <itunes:summary>把整理好的学习文档转成语音，跑步时用 Apple Watch 离线听。</itunes:summary>
     <itunes:type>serial</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://ultraman91.github.io/run-podcast/cover.png"/>
@@ -14,8 +14,8 @@
       <title>认知体系 第01段</title>
       <itunes:episode>1</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-01.m4a" length="7741441" type="audio/x-m4a"/>
-      <guid isPermaLink="false">cognition-01.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-01.m4a" length="3821706" type="audio/x-m4a"/>
+      <guid isPermaLink="false">cognition-01</guid>
       <pubDate>Fri, 02 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>607</itunes:duration>
       <description>认知体系 第01段</description>
@@ -24,8 +24,8 @@
       <title>认知体系 第02段</title>
       <itunes:episode>2</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-02.m4a" length="7601303" type="audio/x-m4a"/>
-      <guid isPermaLink="false">cognition-02.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-02.m4a" length="3745128" type="audio/x-m4a"/>
+      <guid isPermaLink="false">cognition-02</guid>
       <pubDate>Sat, 03 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>599</itunes:duration>
       <description>认知体系 第02段</description>
@@ -34,8 +34,8 @@
       <title>认知体系 第03段</title>
       <itunes:episode>3</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-03.m4a" length="7486493" type="audio/x-m4a"/>
-      <guid isPermaLink="false">cognition-03.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-03.m4a" length="3711974" type="audio/x-m4a"/>
+      <guid isPermaLink="false">cognition-03</guid>
       <pubDate>Sun, 04 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>594</itunes:duration>
       <description>认知体系 第03段</description>
@@ -44,8 +44,8 @@
       <title>认知体系 第04段</title>
       <itunes:episode>4</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-04.m4a" length="7838907" type="audio/x-m4a"/>
-      <guid isPermaLink="false">cognition-04.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-04.m4a" length="3867119" type="audio/x-m4a"/>
+      <guid isPermaLink="false">cognition-04</guid>
       <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>620</itunes:duration>
       <description>认知体系 第04段</description>
@@ -54,8 +54,8 @@
       <title>认知体系 第05段</title>
       <itunes:episode>5</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-05.m4a" length="7546722" type="audio/x-m4a"/>
-      <guid isPermaLink="false">cognition-05.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-05.m4a" length="3733072" type="audio/x-m4a"/>
+      <guid isPermaLink="false">cognition-05</guid>
       <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>596</itunes:duration>
       <description>认知体系 第05段</description>
@@ -64,8 +64,8 @@
       <title>认知体系 第06段</title>
       <itunes:episode>6</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-06.m4a" length="7581473" type="audio/x-m4a"/>
-      <guid isPermaLink="false">cognition-06.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-06.m4a" length="3763633" type="audio/x-m4a"/>
+      <guid isPermaLink="false">cognition-06</guid>
       <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>599</itunes:duration>
       <description>认知体系 第06段</description>
@@ -74,8 +74,8 @@
       <title>认知体系 第07段</title>
       <itunes:episode>7</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-07.m4a" length="7172382" type="audio/x-m4a"/>
-      <guid isPermaLink="false">cognition-07.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-07.m4a" length="3579062" type="audio/x-m4a"/>
+      <guid isPermaLink="false">cognition-07</guid>
       <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>574</itunes:duration>
       <description>认知体系 第07段</description>
@@ -84,8 +84,8 @@
       <title>认知体系 第08段</title>
       <itunes:episode>8</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-08.m4a" length="4122812" type="audio/x-m4a"/>
-      <guid isPermaLink="false">cognition-08.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/cognition-08.m4a" length="2064452" type="audio/x-m4a"/>
+      <guid isPermaLink="false">cognition-08</guid>
       <pubDate>Fri, 09 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>329</itunes:duration>
       <description>认知体系 第08段</description>
@@ -94,18 +94,18 @@
       <title>迭代引擎 第01段</title>
       <itunes:episode>9</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/engine-01.m4a" length="6658672" type="audio/x-m4a"/>
-      <guid isPermaLink="false">engine-01.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/engine-01.m4a" length="3296182" type="audio/x-m4a"/>
+      <guid isPermaLink="false">engine-01</guid>
       <pubDate>Sat, 10 Jan 2026 00:00:00 GMT</pubDate>
-      <itunes:duration>522</itunes:duration>
+      <itunes:duration>523</itunes:duration>
       <description>迭代引擎 第01段</description>
     </item>
     <item>
       <title>迭代引擎 第02段</title>
       <itunes:episode>10</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/engine-02.m4a" length="6883918" type="audio/x-m4a"/>
-      <guid isPermaLink="false">engine-02.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/engine-02.m4a" length="3440589" type="audio/x-m4a"/>
+      <guid isPermaLink="false">engine-02</guid>
       <pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>546</itunes:duration>
       <description>迭代引擎 第02段</description>
@@ -114,8 +114,8 @@
       <title>迭代引擎 第03段</title>
       <itunes:episode>11</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://ultraman91.github.io/run-podcast/audio/engine-03.m4a" length="6310312" type="audio/x-m4a"/>
-      <guid isPermaLink="false">engine-03.m4a</guid>
+      <enclosure url="https://ultraman91.github.io/run-podcast/audio/engine-03.m4a" length="3138819" type="audio/x-m4a"/>
+      <guid isPermaLink="false">engine-03</guid>
       <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
       <itunes:duration>499</itunes:duration>
       <description>迭代引擎 第03段</description>
