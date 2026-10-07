@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>432 音频卡片</title>
+    <link>https://ultraman91.github.io/run-podcast/dufe432/</link>
+    <language>zh-cn</language>
+    <itunes:author>东财432复习手册</itunes:author>
+    <description>东财432复习手册的音频卡片：每章一集，每题先听题目，停顿时自己说出要点，再听作答版。</description>
+    <itunes:summary>东财432复习手册的音频卡片：每章一集，每题先听题目，停顿时自己说出要点，再听作答版。</itunes:summary>
+    <itunes:type>serial</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>Yes</itunes:block>
+    <itunes:image href="https://ultraman91.github.io/run-podcast/dufe432/icon-512.png"/>
+    <item>
+      <title>第1章 导论（6题）</title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch01.m4a" length="2084760" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch01-fde3df51</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>392</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第2章 数据的搜集（8题）</title>
+      <itunes:episode>2</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch02.m4a" length="2687094" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch02-682758dd</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>504</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第3章 数据的图表展示（5题）</title>
+      <itunes:episode>3</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch03.m4a" length="1354600" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch03-5d56af85</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>265</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第4章 数据的概括性度量（7题）</title>
+      <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch04.m4a" length="2062626" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch04-a18f9602</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>395</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第5章 概率与概率分布（8题）</title>
+      <itunes:episode>5</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch05.m4a" length="2433960" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch05-ac856ea9</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>462</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第6章 统计量及其抽样分布（10题）</title>
+      <itunes:episode>6</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch06.m4a" length="2635018" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch06-87d3b6ab</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>516</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第7章 参数估计（8题）</title>
+      <itunes:episode>7</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch07.m4a" length="2106435" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch07-a4706a79</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>410</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第8章 假设检验（8题）</title>
+      <itunes:episode>8</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch08.m4a" length="2207784" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch08-2efb0611</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>430</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第9章 分类数据分析（3题）</title>
+      <itunes:episode>9</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch09.m4a" length="1019914" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch09-6d9c4dbe</guid>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>193</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第10章 方差分析（5题）</title>
+      <itunes:episode>10</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch10.m4a" length="1316207" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch10-5e66c011</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>259</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第11章 一元线性回归（9题）</title>
+      <itunes:episode>11</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch11.m4a" length="2452506" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch11-45225745</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>477</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第12章 多元线性回归（5题）</title>
+      <itunes:episode>12</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch12.m4a" length="1419225" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch12-b7530c1a</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>275</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第13章 时间序列分析和预测（7题）</title>
+      <itunes:episode>13</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch13.m4a" length="1673181" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch13-78a96d21</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>334</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+    <item>
+      <title>第14章 指数（7题）</title>
+      <itunes:episode>14</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch14.m4a" length="1934374" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch14-b8f95a62</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>376</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
+  </channel>
+</rss>

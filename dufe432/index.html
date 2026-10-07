@@ -887,6 +887,52 @@ select{font:inherit;font-size:.86rem;color:var(--ink);background:var(--sheet);bo
 
 html:not(.js) #theme-btn{display:none!important}
 
+/* 通勤听 */
+
+.listen{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;margin:.6rem 0 0;box-shadow:var(--shadow)}
+
+.listen>summary{cursor:pointer;list-style:none;padding:.75rem 1rem;display:flex;flex-wrap:wrap;gap:.15rem .6rem;align-items:baseline}
+
+.listen>summary::-webkit-details-marker{display:none}
+
+.listen>summary b{font-family:var(--serif);font-size:1.08rem}
+
+.listen>summary span{flex:1 1 14rem;font-size:.82rem;color:var(--ink-3)}
+
+.listen>summary::after{content:"展开";font-size:.8rem;color:var(--accent)}
+
+.listen[open]>summary::after{content:"收起"}
+
+.ls-body{padding:0 1rem 1rem}
+
+.ls-row{display:flex;flex-wrap:wrap;gap:.5rem .7rem;align-items:center;margin:.45rem 0}
+
+.ls-row select{flex:1 1 12rem;min-width:0}
+
+.ls-player{border-top:1px dashed var(--rule-2);margin-top:.6rem;padding-top:.6rem}
+
+.ls-now{margin:0 0 .45rem;font-size:.95rem;line-height:1.5}
+
+.ls-pos{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin-right:.5rem}
+
+.ls-player audio{width:100%;height:2.6rem}
+
+.ls-markrow{font-size:.88rem;color:var(--ink-2)}
+
+.ls-markrow .marks{margin-left:0}
+
+.ls-body .ls-msg{font-size:.85rem;color:var(--accent);min-height:1.2em;margin:.3rem 0}
+
+.ls-body .note{margin:.4rem 0 0}
+
+/* 搜索、回到顶部 */
+
+.qbox{font:inherit;font-size:.88rem;color:var(--ink);background:var(--sheet);border:1px solid var(--rule-2);border-radius:6px;padding:.32rem .6rem;flex:1 1 9rem;min-width:0}
+
+.totop{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;border:1px solid var(--rule-2);background:var(--sheet);color:var(--ink-2);border-radius:999px;padding:.45rem .9rem;font-size:.85rem;box-shadow:var(--shadow);cursor:pointer}
+
+html:not(.js) .listen{display:none!important}
+
 .today-sub{flex-basis:100%;display:flex;flex-wrap:wrap;gap:.35rem 1rem;align-items:center;font-size:.8rem;color:var(--ink-3)}
 
 .today-sub select{font-size:.78rem;padding:.1rem .3rem}
@@ -1119,7 +1165,7 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
   .wrap{max-width:none;padding:0}
 
-  .tabs,.tools,.card-f,.paper,.viz-tools,.foot,.rescue,#drill,.tip,.tl-bar,.lede,.today,.syncp,.wx,.focus{display:none!important}
+  .tabs,.tools,.card-f,.paper,.viz-tools,.foot,.rescue,#drill,.tip,.tl-bar,.lede,.today,.syncp,.wx,.focus,.listen,.totop{display:none!important}
 
   .card{box-shadow:none;break-inside:avoid;border-color:#bbb}
 
@@ -1799,6 +1845,14 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
       </div>
 
+      <details class="listen" id="listen">
+
+        <summary><b>通勤听</b><span>432 音频卡片：先听题目，停顿时在心里说出要点，"叮"一声后听答案</span></summary>
+
+        <div class="ls-body" id="ls-body"><script type="application/json" id="ls-data">{"base":"https://ultraman91.github.io/run-podcast/dufe432/audio/","ch":[{"n":1,"name":"导论","secs":392,"cards":[{"id":"c1-1yv1v4e","t":"统计学、描述统计、推断统计","f":"cards/c01-01.m4a","s":54},{"id":"c1-12ocpne","t":"总体、样本、参数、统计量（联系与区别）","f":"cards/c01-02.m4a","s":54},{"id":"c1-1fzcpa0","t":"分类数据、顺序数据、数值型数据的区别","f":"cards/c01-03.m4a","s":60},{"id":"c1-16f0a0s","t":"观测数据与实验数据的区别","f":"cards/c01-04.m4a","s":82},{"id":"c1-f9v0z4","t":"变量；分类变量、数值型变量、离散型与连续型变量","f":"cards/c01-05.m4a","s":54},{"id":"c1-1is0o8c","t":"从统计学角度分析\"数据经济\"","f":"cards/c01-06.m4a","s":74}]},{"n":2,"name":"数据的搜集","secs":504,"cards":[{"id":"c2-1j3d0td","t":"概率抽样与非概率抽样的区别","f":"cards/c02-01.m4a","s":60},{"id":"c2-h6f1pl","t":"五种概率抽样：做法、优点、局限、适用场合","f":"cards/c02-02.m4a","s":85},{"id":"c2-143rr66","t":"五种非概率抽样","f":"cards/c02-03.m4a","s":55},{"id":"c2-ik19dg","t":"分层抽样与整群抽样的异同与适用场合","f":"cards/c02-04.m4a","s":61},{"id":"c2-vwnis","t":"统计数据的误差：抽样误差与非抽样误差（原因与控制）","f":"cards/c02-05.m4a","s":66},{"id":"c2-62i3sc","t":"抽样框","f":"cards/c02-06.m4a","s":35},{"id":"c2-13hpnzt","t":"抽样调查与典型调查的异同","f":"cards/c02-07.m4a","s":80},{"id":"c2-1aoeabb","t":"数据来源：直接来源与间接来源（二手资料的注意事项）","f":"cards/c02-08.m4a","s":48}]},{"n":3,"name":"数据的图表展示","secs":265,"cards":[{"id":"c3-1vvyrjg","t":"频数、频数分布、组中值","f":"cards/c03-01.m4a","s":44},{"id":"c3-vca1g7","t":"统计分组的作用、分组标志的选择、分组步骤","f":"cards/c03-02.m4a","s":52},{"id":"c3-1kc8kcx","t":"直方图与条形图、直方图与茎叶图的区别","f":"cards/c03-03.m4a","s":55},{"id":"c3-1ol2csm","t":"品质数据与数值型数据的图示方法","f":"cards/c03-04.m4a","s":48},{"id":"c3-1x5yqpp","t":"箱线图（盒形图）的绘制原理与优缺点","f":"cards/c03-05.m4a","s":51}]},{"n":4,"name":"数据的概括性度量","secs":395,"cards":[{"id":"c4-1arr5so","t":"集中趋势：众数、中位数、平均数的特点与关系","f":"cards/c04-01.m4a","s":63},{"id":"c4-piz4wo","t":"几何平均数与调和平均数","f":"cards/c04-02.m4a","s":48},{"id":"c4-1nj2wp0","t":"离散程度的度量及各自特点","f":"cards/c04-03.m4a","s":64},{"id":"c4-sm3wwc","t":"为什么要计算离散系数（变异系数）","f":"cards/c04-04.m4a","s":50},{"id":"c4-i4ghto","t":"分布形状：偏态与峰态","f":"cards/c04-05.m4a","s":49},{"id":"c4-1mxipx1","t":"标准分数","f":"cards/c04-06.m4a","s":45},{"id":"c4-11fbxu1","t":"如何对一批数据做描述统计（论述框架）","f":"cards/c04-07.m4a","s":60}]},{"n":5,"name":"概率与概率分布","secs":462,"cards":[{"id":"c5-9fsnhi","t":"随机事件、必然事件、不可能事件、样本空间","f":"cards/c05-01.m4a","s":42},{"id":"c5-18ytwmk","t":"概率的定义方法；频率与概率的关系","f":"cards/c05-02.m4a","s":58},{"id":"c5-17otcr8","t":"事件的独立与互斥（举例说明区别）","f":"cards/c05-03.m4a","s":49},{"id":"c5-1w13jnu","t":"全概率公式与贝叶斯公式（及其思想）","f":"cards/c05-04.m4a","s":66},{"id":"c5-3srvj8","t":"随机变量、分布函数、概率函数（分布列）、概率密度函数","f":"cards/c05-05.m4a","s":55},{"id":"c5-q8t5a9","t":"数学期望、方差、协方差","f":"cards/c05-06.m4a","s":64},{"id":"c5-17tag2k","t":"二维随机变量：联合分布、边缘分布、条件分布、独立性","f":"cards/c05-07.m4a","s":51},{"id":"c5-1baklz1","t":"常用分布（计算题直接用）","f":"cards/c05-08.m4a","s":62}]},{"n":6,"name":"统计量及其抽样分布","secs":516,"cards":[{"id":"c6-hby4cz","t":"统计量；统计量中为什么不含未知参数","f":"cards/c06-01.m4a","s":34},{"id":"c6-zk3kgk","t":"总体分布、样本分布、抽样分布","f":"cards/c06-02.m4a","s":50},{"id":"c6-1oihu5n","t":"中心极限定理及其意义","f":"cards/c06-03.m4a","s":58},{"id":"c6-l6kekh","t":"三大分布（χ²、t、F）：定义、性质、用途，是不是统计量","f":"cards/c06-04.m4a","s":63},{"id":"c6-1ixtrf0","t":"充分统计量","f":"cards/c06-05.m4a","s":45},{"id":"c6-67qoqb","t":"自由度","f":"cards/c06-06.m4a","s":43},{"id":"c6-1h1dmeg","t":"次序统计量（最小值、最大值的分布）","f":"cards/c06-07.m4a","s":44},{"id":"c6-1ae26p1","t":"抽样平均误差及其影响因素","f":"cards/c06-08.m4a","s":38},{"id":"c6-3l0o4a","t":"数字特征计算：D(Xᵢ-X̄) 与 Cov(Xᵢ-X̄,Xⱼ-X̄)","f":"cards/c06-09.m4a","s":50},{"id":"c6-1qi24b5","t":"对统计模拟的理解","f":"cards/c06-10.m4a","s":75}]},{"n":7,"name":"参数估计","secs":410,"cards":[{"id":"c7-1xitxig","t":"估计量与估计值；点估计与区间估计的区别","f":"cards/c07-01.m4a","s":52},{"id":"c7-khshzl","t":"置信区间与置信水平（置信度）的含义","f":"cards/c07-02.m4a","s":53},{"id":"c7-mde2zn","t":"评价估计量的标准：无偏性、有效性、一致性","f":"cards/c07-03.m4a","s":43},{"id":"c7-ufla18","t":"矩估计与极大似然估计：思想、步骤、特点","f":"cards/c07-04.m4a","s":58},{"id":"c7-53kpei","t":"一个总体参数的区间估计公式","f":"cards/c07-05.m4a","s":54},{"id":"c7-1qruwu1","t":"两个总体参数的区间估计；独立样本与匹配样本","f":"cards/c07-06.m4a","s":47},{"id":"c7-d780ph","t":"样本量的确定及影响因素（\"问卷发多少份\"论述）","f":"cards/c07-07.m4a","s":58},{"id":"c7-19zjsdo","t":"如何解决精度与置信度之间的矛盾","f":"cards/c07-08.m4a","s":31}]},{"n":8,"name":"假设检验","secs":430,"cards":[{"id":"c8-cw5was","t":"假设检验的概念、基本思想（逻辑）与作用","f":"cards/c08-01.m4a","s":53},{"id":"c8-jabvp1","t":"假设检验的步骤；如何设置原假设与备择假设","f":"cards/c08-02.m4a","s":59},{"id":"c8-14ty9q5","t":"两类错误（拒真、取伪）的定义、关系与控制","f":"cards/c08-03.m4a","s":54},{"id":"c8-1nrbiel","t":"显著性水平、P值、二者的区别；统计显著","f":"cards/c08-04.m4a","s":55},{"id":"c8-558ayt","t":"为什么说\"不拒绝H0\"而不说\"接受H0\"","f":"cards/c08-05.m4a","s":51},{"id":"c8-911wzh","t":"小概率原理及其在假设检验中的作用","f":"cards/c08-06.m4a","s":48},{"id":"c8-12smdu8","t":"参数估计与假设检验的异同","f":"cards/c08-07.m4a","s":49},{"id":"c8-1x76f5v","t":"检验统计量的选择","f":"cards/c08-08.m4a","s":46}]},{"n":9,"name":"分类数据分析","secs":193,"cards":[{"id":"c9-s6oirw","t":"列联表；列联分析原理（χ²统计量的构造原理）","f":"cards/c09-01.m4a","s":61},{"id":"c9-1utg938","t":"列联表中相关性的度量：φ系数、列联系数C、V系数","f":"cards/c09-02.m4a","s":71},{"id":"c9-iku2r7","t":"拟合优度检验；使用χ²检验的注意事项","f":"cards/c09-03.m4a","s":45}]},{"n":10,"name":"方差分析","secs":259,"cards":[{"id":"c10-1icvq26","t":"方差分析的概念、基本思想与原理；为什么不用两两 t 检验","f":"cards/c10-01.m4a","s":61},{"id":"c10-1q28bui","t":"方差分析的基本假定","f":"cards/c10-02.m4a","s":28},{"id":"c10-vdrrl0","t":"单因素方差分析的步骤与方差分析表","f":"cards/c10-03.m4a","s":62},{"id":"c10-12hg283","t":"方差分析的类型及区别（单因素、无交互/有交互的双因素）","f":"cards/c10-04.m4a","s":55},{"id":"c10-155dr98","t":"多重比较（LSD方法）","f":"cards/c10-05.m4a","s":38}]},{"n":11,"name":"一元线性回归","secs":477,"cards":[{"id":"c11-lp94sj","t":"相关关系的概念与特点；相关分析要解决的问题","f":"cards/c11-01.m4a","s":49},{"id":"c11-194um8p","t":"相关系数的定义与性质；为什么要检验、怎么检验","f":"cards/c11-02.m4a","s":56},{"id":"c11-qel5bf","t":"相关分析与回归分析的联系和区别","f":"cards/c11-03.m4a","s":56},{"id":"c11-xhgceq","t":"回归分析的概念与一般过程；最小二乘原理","f":"cards/c11-04.m4a","s":50},{"id":"c11-1bwacki","t":"一元线性回归模型的基本假定","f":"cards/c11-05.m4a","s":45},{"id":"c11-1o2ahs2","t":"SST、SSR、SSE 与判定系数 R²；估计标准误差","f":"cards/c11-06.m4a","s":62},{"id":"c11-186d2km","t":"F 检验与 t 检验的作用；一元回归中二者等价","f":"cards/c11-07.m4a","s":55},{"id":"c11-1e06y3p","t":"置信区间估计与预测区间估计的区别","f":"cards/c11-08.m4a","s":45},{"id":"c11-efy3lo","t":"回归分析结果的评价（如何判断回归方程的优劣）","f":"cards/c11-09.m4a","s":42}]},{"n":12,"name":"多元线性回归","secs":275,"cards":[{"id":"c12-1k7ic6v","t":"多元线性回归模型及基本假定（\"写一个模型并谈理解\"论述）","f":"cards/c12-01.m4a","s":68},{"id":"c12-orn0hn","t":"多重判定系数与调整的多重判定系数","f":"cards/c12-02.m4a","s":47},{"id":"c12-t3p0yu","t":"多重共线性：含义、影响、判别方法、处理","f":"cards/c12-03.m4a","s":56},{"id":"c12-1j77vw3","t":"变量选择：向前选择、向后剔除、逐步回归","f":"cards/c12-04.m4a","s":45},{"id":"c12-1o28ozn","t":"读懂回归输出表（2025计算3）","f":"cards/c12-05.m4a","s":43}]},{"n":13,"name":"时间序列分析和预测","secs":334,"cards":[{"id":"c13-v3kgyj","t":"时间序列的构成要素","f":"cards/c13-01.m4a","s":47},{"id":"c13-9wjj9y","t":"平稳序列与非平稳序列","f":"cards/c13-02.m4a","s":32},{"id":"c13-19d4ktp","t":"长期趋势及其测定方法","f":"cards/c13-03.m4a","s":46},{"id":"c13-q0m37l","t":"季节变动（季节波动）及其测定方法；季节指数","f":"cards/c13-04.m4a","s":53},{"id":"c13-1se48cd","t":"时间序列的速度分析指标及其关系","f":"cards/c13-05.m4a","s":50},{"id":"c13-64wwnh","t":"指数平滑法：基本含义与步骤","f":"cards/c13-06.m4a","s":53},{"id":"c13-dw6qld","t":"时间序列的预测程序；平稳序列的预测方法","f":"cards/c13-07.m4a","s":36}]},{"n":14,"name":"指数","secs":376,"cards":[{"id":"c14-qz3gff","t":"指数的概念、特点（性质）、作用与分类","f":"cards/c14-01.m4a","s":54},{"id":"c14-hy1mc7","t":"同度量因素及其作用","f":"cards/c14-02.m4a","s":40},{"id":"c14-10j21eb","t":"拉氏指数与帕氏指数的区别","f":"cards/c14-03.m4a","s":53},{"id":"c14-1q3if7n","t":"指数体系及其作用；指数因素分析","f":"cards/c14-04.m4a","s":49},{"id":"c14-1lz8bko","t":"加权综合指数与加权平均指数的区别与联系","f":"cards/c14-05.m4a","s":43},{"id":"c14-12b8004","t":"居民消费价格指数（CPI）及其作用","f":"cards/c14-06.m4a","s":53},{"id":"c14-5telxw","t":"构建综合评价指数时要考虑的问题（\"编制居民幸福生活指数\"论述）","f":"cards/c14-07.m4a","s":70}]}]}</script><p class="note">96 道题，14 章，共约 88 分钟。听完一题可以直接标会、模糊、不会，和复习进度同步。</p><div class="ls-row"><button type="button" class="btn pri" id="ls-today">听今天要复习的（8 题）</button><select id="ls-ch" aria-label="按章节听"><option value="">按章节听…</option><option value="1">第1章 导论（6题 · 7分钟）</option><option value="2">第2章 数据的搜集（8题 · 8分钟）</option><option value="3">第3章 数据的图表展示（5题 · 4分钟）</option><option value="4">第4章 数据的概括性度量（7题 · 7分钟）</option><option value="5">第5章 概率与概率分布（8题 · 8分钟）</option><option value="6">第6章 统计量及其抽样分布（10题 · 9分钟）</option><option value="7">第7章 参数估计（8题 · 7分钟）</option><option value="8">第8章 假设检验（8题 · 7分钟）</option><option value="9">第9章 分类数据分析（3题 · 3分钟）</option><option value="10">第10章 方差分析（5题 · 4分钟）</option><option value="11">第11章 一元线性回归（9题 · 8分钟）</option><option value="12">第12章 多元线性回归（5题 · 5分钟）</option><option value="13">第13章 时间序列分析和预测（7题 · 6分钟）</option><option value="14">第14章 指数（7题 · 6分钟）</option></select><button type="button" class="linkbtn" id="ls-resume" hidden=""></button></div><div class="ls-player" id="ls-player" hidden=""><p class="ls-now"><span class="ls-pos" id="ls-pos"></span><span id="ls-title"></span></p><audio id="ls-audio" controls="" preload="none"></audio><div class="ls-row"><button type="button" class="btn" id="ls-prev">上一题</button><button type="button" class="btn" id="ls-next">下一题</button><div class="seg-btns" id="ls-rate" role="group" aria-label="播放速度"><button type="button" data-v="1" aria-pressed="true">1×</button><button type="button" data-v="1.25" aria-pressed="false">1.25×</button><button type="button" data-v="1.5" aria-pressed="false">1.5×</button></div></div><div class="ls-row ls-markrow"><span>这题记得怎么样？</span><div class="marks" id="ls-marks" role="group" aria-label="掌握程度"><button type="button" data-s="know" aria-pressed="false">会</button><button type="button" data-s="fuzzy" aria-pressed="false">模糊</button><button type="button" data-s="no" aria-pressed="false">不会</button></div></div></div><div class="ls-row"><button type="button" class="linkbtn" id="ls-cache">出门前连着 Wi-Fi 点这里：先把今天要听的下载到手机</button></div><p class="ls-msg" id="ls-msg" aria-live="polite"></p><p class="note">想锁屏连着播、整章离线听：用 iPhone 自带的"播客"App 订阅。打开"播客" → 资料库 → 右上角"…" → "通过 URL 关注节目"，粘贴订阅地址。<button type="button" class="linkbtn" id="ls-feed">复制订阅地址</button></p></div>
+
+      </details>
+
       <div class="syncp" id="syncp" hidden="">
 
         <h3>复习进度保存在哪里</h3>
@@ -1858,6 +1912,8 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
           <label class="switch" for="st-toggle"><input type="checkbox" id="st-toggle">自测模式：先想，再看答案</label>
 
           <select id="f-ch" aria-label="按章节筛选"><option value="">全部章节</option><option value="1">第1章 导论</option><option value="2">第2章 数据的搜集</option><option value="3">第3章 数据的图表展示</option><option value="4">第4章 数据的概括性度量</option><option value="5">第5章 概率与概率分布</option><option value="6">第6章 统计量及其抽样分布</option><option value="7">第7章 参数估计</option><option value="8">第8章 假设检验</option><option value="9">第9章 分类数据分析</option><option value="10">第10章 方差分析</option><option value="11">第11章 一元线性回归</option><option value="12">第12章 多元线性回归</option><option value="13">第13章 时间序列分析和预测</option><option value="14">第14章 指数</option></select>
+
+          <input type="search" id="f-q" class="qbox" placeholder="搜题目或关键词" aria-label="搜索题目" autocomplete="off" enterkeyhint="search">
 
           <div class="prog" id="bs-prog" aria-live="polite"><span class="pbar" aria-hidden="true"><i style="width:0%;background:var(--know)"></i><i style="width:0%;background:var(--fuzzy)"></i><i style="width:0%;background:var(--no)"></i></span><span>会 0 · 模糊 0 · 不会 0 · 新题 101</span></div>
 
@@ -4227,7 +4283,7 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <p>交错练习：每题先判断该用哪个统计量、拒绝域在哪一侧、查哪个临界值，再看解释。每次打开，题目和选项的顺序都会打乱。</p>
 
-<div id="drill"><div class="dscore"><span id="d-score">已答 0 / 23</span><button type="button" class="linkbtn" id="d-reset">打乱重来</button></div><div class="drill"><div class="dq"><p><span class="dn">1</span>H₀：μ=100，H₁：μ≠100，α=0.05，σ 已知。拒绝域是？</p><div class="dopts"><button type="button" data-ok="0">z &lt; −1.645</button><button type="button" data-ok="0">|z| &gt; 1.645</button><button type="button" data-ok="1">|z| &gt; 1.96</button><button type="button" data-ok="0">z &gt; 1.96</button></div><p class="dwhy" hidden="">双侧检验把 α 平分到两侧，每侧 0.025，临界值 z₀.₀₂₅=1.96。</p></div><div class="dq"><p><span class="dn">2</span>两个独立大样本（n₁=80，n₂=100），比较两个总体均值。</p><div class="dopts"><button type="button" data-ok="0">F(79,99)</button><button type="button" data-ok="0">χ²(1)</button><button type="button" data-ok="1">Z</button><button type="button" data-ok="0">t(178)</button></div><p class="dwhy" hidden="">两个独立大样本用 Z，标准误为 √(s₁²/n₁+s₂²/n₂)。</p></div><div class="dq"><p><span class="dn">3</span>多元回归有 3 个自变量、15 个观测值，检验回归方程整体是否显著。</p><div class="dopts"><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="0">F(3,14)</button><button type="button" data-ok="0">F(2,12)</button><button type="button" data-ok="1">F(3,11)</button></div><p class="dwhy" hidden="">F(k, n−k−1)=F(3,11)，2025年计算题就是这个。</p></div><div class="dq"><p><span class="dn">4</span>检验两个正态总体的方差是否相等。</p><div class="dopts"><button type="button" data-ok="1">F(n₁−1, n₂−1)</button><button type="button" data-ok="0">χ²(n−1)</button><button type="button" data-ok="0">t(n₁+n₂−2)</button><button type="button" data-ok="0">Z</button></div><p class="dwhy" hidden="">两方差之比用 F=s₁²/s₂²。</p></div><div class="dq"><p><span class="dn">5</span>正态总体，n=16，s²=1.44，求总体方差的95%置信区间。</p><div class="dopts"><button type="button" data-ok="0">t(15)</button><button type="button" data-ok="0">χ²(16)</button><button type="button" data-ok="0">F(15,15)</button><button type="button" data-ok="1">χ²(15)</button></div><p class="dwhy" hidden="">方差的区间估计用 χ²，自由度 n−1=15；较大的临界值放在区间下限的分母里。</p></div><div class="dq"><p><span class="dn">6</span>n=20，样本相关系数 r=0.6，检验总体相关系数是否为0。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">F(1,19)</button><button type="button" data-ok="1">t(18)</button><button type="button" data-ok="0">t(19)</button></div><p class="dwhy" hidden="">t=|r|√((n−2)/(1−r²))∼t(n−2)=t(18)。</p></div><div class="dq"><p><span class="dn">7</span>总体分布未知，n=12，σ 未知，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">χ²(11)</button><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="1">条件不足：需要正态假定或更大的样本</button></div><p class="dwhy" hidden="">小样本且总体不一定正态时，Z 和 t 都没有依据。考题一般会写明"服从正态分布"。</p></div><div class="dq"><p><span class="dn">8</span>两个正态总体，方差未知但相等，n₁=10、n₂=8，比较两个总体均值。</p><div class="dopts"><button type="button" data-ok="0">F(9,7)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">t(17)</button><button type="button" data-ok="1">合并方差 t(16)</button></div><p class="dwhy" hidden="">小样本且方差相等 → 合并方差 t，自由度 n₁+n₂−2=16（2022年计算题就是这种）。</p></div><div class="dq"><p><span class="dn">9</span>男、女两组对三种口味的偏好是否一致（2×3 列联表）。</p><div class="dopts"><button type="button" data-ok="1">χ²(2)</button><button type="button" data-ok="0">χ²(6)</button><button type="button" data-ok="0">χ²(5)</button><button type="button" data-ok="0">F(1,2)</button></div><p class="dwhy" hidden="">两个分类变量 → χ² 独立性检验，自由度 (r−1)(c−1)=(2−1)(3−1)=2。</p></div><div class="dq"><p><span class="dn">10</span>检验一枚骰子六个点数出现的频数是否符合均匀分布。</p><div class="dopts"><button type="button" data-ok="0">F(5,6)</button><button type="button" data-ok="0">χ²(6)</button><button type="button" data-ok="1">χ²(5)</button><button type="button" data-ok="0">Z</button></div><p class="dwhy" hidden="">拟合优度检验，自由度 = 类别数 − 1 = 5。</p></div><div class="dq"><p><span class="dn">11</span>总体分布未知，n=64，样本标准差 s=12，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">条件不足</button><button type="button" data-ok="1">Z：x̄ ± z·s/√n</button><button type="button" data-ok="0">χ²(63)</button><button type="button" data-ok="0">t(63)</button></div><p class="dwhy" hidden="">大样本（n≥30）时由中心极限定理，σ 未知用 s 代替，仍按 Z 处理（此时 t(63) 与 Z 几乎相同）。</p></div><div class="dq"><p><span class="dn">12</span>随机调查 400 人，其中 120 人支持，求支持率的95%置信区间。</p><div class="dopts"><button type="button" data-ok="0">t(399)</button><button type="button" data-ok="0">χ²(399)</button><button type="button" data-ok="0">Z：p ± z√(π₀(1−π₀)/n)</button><button type="button" data-ok="1">Z：p ± z√(p(1−p)/n)</button></div><p class="dwhy" hidden="">比例的区间估计用 Z，标准误里用样本比例 p；检验时才用 π₀。</p></div><div class="dq"><p><span class="dn">13</span>检验 H₀：π=0.3，样本 n=400，样本比例 p=0.34。</p><div class="dopts"><button type="button" data-ok="0">t(399)</button><button type="button" data-ok="0">Z，分母用 √(p(1−p)/n)</button><button type="button" data-ok="0">χ²(1)</button><button type="button" data-ok="1">Z，分母用 √(π₀(1−π₀)/n)</button></div><p class="dwhy" hidden="">检验是在 H₀ 成立的前提下构造统计量，所以分母用 π₀。</p></div><div class="dq"><p><span class="dn">14</span>H₀：μ≥100，H₁：μ&lt;100，α=0.05，正态总体、σ 已知。拒绝域是？</p><div class="dopts"><button type="button" data-ok="0">z &lt; −1.96</button><button type="button" data-ok="1">z &lt; −1.645</button><button type="button" data-ok="0">|z| &gt; 1.96</button><button type="button" data-ok="0">z &gt; 1.645</button></div><p class="dwhy" hidden="">拒绝域跟着 H₁ 走：H₁ 是"&lt;"，拒绝域在左侧；单侧检验用 z₀.₀₅=1.645，不用 1.96。</p></div><div class="dq"><p><span class="dn">15</span>一元线性回归，n=12，检验线性关系是否显著。</p><div class="dopts"><button type="button" data-ok="0">χ²(10)</button><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="1">F(1,10)，等价于 t(10)</button><button type="button" data-ok="0">F(2,10)</button></div><p class="dwhy" hidden="">一元回归 F=MSR/MSE∼F(1, n−2)，与 t(n−2) 检验等价（F=t²）。</p></div><div class="dq"><p><span class="dn">16</span>四种广告方式，共 20 个观测值，检验各方式的平均销量是否相同。</p><div class="dopts"><button type="button" data-ok="0">t(19)</button><button type="button" data-ok="0">F(4,20)</button><button type="button" data-ok="0">χ²(3)</button><button type="button" data-ok="1">F(3,16)</button></div><p class="dwhy" hidden="">一个分类因素、多个均值 → 单因素方差分析，F(k−1, n−k)=F(3,16)。</p></div><div class="dq"><p><span class="dn">17</span>总体服从正态分布，σ 未知，n=16，s=4，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="1">t(15)</button><button type="button" data-ok="0">χ²(15)</button><button type="button" data-ok="0">t(16)</button></div><p class="dwhy" hidden="">正态总体、小样本、σ 未知 → t 分布，自由度 n−1=15。</p></div><div class="dq"><p><span class="dn">18</span>检验得到 P 值 = 0.03，显著性水平 α=0.01，结论是？</p><div class="dopts"><button type="button" data-ok="0">接受 H₁</button><button type="button" data-ok="0">拒绝 H₀</button><button type="button" data-ok="1">不拒绝 H₀</button><button type="button" data-ok="0">无法判断</button></div><p class="dwhy" hidden="">P 值不小于 α 就不拒绝 H₀（0.03 &gt; 0.01）；同样的 P 值在 α=0.05 时就会拒绝。</p></div><div class="dq"><p><span class="dn">19</span>正态总体、n=10，求 σ² 的95%置信区间。区间下限 (n−1)s²/(?)</p><div class="dopts"><button type="button" data-ok="0">χ²₀.₉₇₅(9)=2.700</button><button type="button" data-ok="1">χ²₀.₀₂₅(9)=19.023</button><button type="button" data-ok="0">χ²₀.₀₅(9)=16.919</button><button type="button" data-ok="0">χ²₀.₀₂₅(10)=20.483</button></div><p class="dwhy" hidden="">下限的分母用较大的临界值（上侧 0.025 分位数），上限用较小的 χ²₀.₉₇₅(9)=2.700；自由度 n−1=9。</p></div><div class="dq"><p><span class="dn">20</span>正态总体、σ 未知、n=16，求均值的95%置信区间，临界值取？</p><div class="dopts"><button type="button" data-ok="0">t₀.₀₂₅(16)=2.120</button><button type="button" data-ok="0">z₀.₀₂₅=1.96</button><button type="button" data-ok="1">t₀.₀₂₅(15)=2.131</button><button type="button" data-ok="0">t₀.₀₅(15)=1.753</button></div><p class="dwhy" hidden="">区间估计是双侧的：用 α/2=0.025；自由度 n−1=15。</p></div><div class="dq"><p><span class="dn">21</span>某零件长度服从正态分布，总体标准差 σ=0.5 已知，抽取 n=10 件，求均值的95%置信区间。</p><div class="dopts"><button type="button" data-ok="1">Z：x̄ ± z·σ/√n</button><button type="button" data-ok="0">t(9)：x̄ ± t·s/√n</button><button type="button" data-ok="0">χ²(9)</button><button type="button" data-ok="0">条件不足</button></div><p class="dwhy" hidden="">总体正态且 σ 已知，不论样本大小都用 Z。</p></div><div class="dq"><p><span class="dn">22</span>检验某正态总体的方差是否等于 σ₀²。</p><div class="dopts"><button type="button" data-ok="0">t(n−1)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">F(n−1,n−1)</button><button type="button" data-ok="1">χ²(n−1)</button></div><p class="dwhy" hidden="">一个正态总体方差的检验用 χ²=(n−1)s²/σ₀²。</p></div><div class="dq"><p><span class="dn">23</span>同一批 15 名学生，培训前后各测一次成绩，检验培训是否有效。</p><div class="dopts"><button type="button" data-ok="1">匹配样本 t(14)</button><button type="button" data-ok="0">两独立样本 t(28)</button><button type="button" data-ok="0">F(14,14)</button><button type="button" data-ok="0">Z</button></div><p class="dwhy" hidden="">前后成绩一一对应，是匹配样本：对差值做单样本 t 检验，自由度 n−1=14。</p></div></div></div></section>
+<div id="drill"><div class="dscore"><span id="d-score">已答 0 / 23</span><button type="button" class="linkbtn" id="d-reset">打乱重来</button></div><div class="drill"><div class="dq"><p><span class="dn">1</span>多元回归有 3 个自变量、15 个观测值，检验回归方程整体是否显著。</p><div class="dopts"><button type="button" data-ok="1">F(3,11)</button><button type="button" data-ok="0">F(3,14)</button><button type="button" data-ok="0">F(2,12)</button><button type="button" data-ok="0">t(11)</button></div><p class="dwhy" hidden="">F(k, n−k−1)=F(3,11)，2025年计算题就是这个。</p></div><div class="dq"><p><span class="dn">2</span>H₀：μ≥100，H₁：μ&lt;100，α=0.05，正态总体、σ 已知。拒绝域是？</p><div class="dopts"><button type="button" data-ok="0">|z| &gt; 1.96</button><button type="button" data-ok="1">z &lt; −1.645</button><button type="button" data-ok="0">z &lt; −1.96</button><button type="button" data-ok="0">z &gt; 1.645</button></div><p class="dwhy" hidden="">拒绝域跟着 H₁ 走：H₁ 是"&lt;"，拒绝域在左侧；单侧检验用 z₀.₀₅=1.645，不用 1.96。</p></div><div class="dq"><p><span class="dn">3</span>正态总体、σ 未知、n=16，求均值的95%置信区间，临界值取？</p><div class="dopts"><button type="button" data-ok="0">t₀.₀₂₅(16)=2.120</button><button type="button" data-ok="0">z₀.₀₂₅=1.96</button><button type="button" data-ok="1">t₀.₀₂₅(15)=2.131</button><button type="button" data-ok="0">t₀.₀₅(15)=1.753</button></div><p class="dwhy" hidden="">区间估计是双侧的：用 α/2=0.025；自由度 n−1=15。</p></div><div class="dq"><p><span class="dn">4</span>检验一枚骰子六个点数出现的频数是否符合均匀分布。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">χ²(6)</button><button type="button" data-ok="1">χ²(5)</button><button type="button" data-ok="0">F(5,6)</button></div><p class="dwhy" hidden="">拟合优度检验，自由度 = 类别数 − 1 = 5。</p></div><div class="dq"><p><span class="dn">5</span>一元线性回归，n=12，检验线性关系是否显著。</p><div class="dopts"><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="1">F(1,10)，等价于 t(10)</button><button type="button" data-ok="0">F(2,10)</button><button type="button" data-ok="0">χ²(10)</button></div><p class="dwhy" hidden="">一元回归 F=MSR/MSE∼F(1, n−2)，与 t(n−2) 检验等价（F=t²）。</p></div><div class="dq"><p><span class="dn">6</span>男、女两组对三种口味的偏好是否一致（2×3 列联表）。</p><div class="dopts"><button type="button" data-ok="1">χ²(2)</button><button type="button" data-ok="0">F(1,2)</button><button type="button" data-ok="0">χ²(6)</button><button type="button" data-ok="0">χ²(5)</button></div><p class="dwhy" hidden="">两个分类变量 → χ² 独立性检验，自由度 (r−1)(c−1)=(2−1)(3−1)=2。</p></div><div class="dq"><p><span class="dn">7</span>检验 H₀：π=0.3，样本 n=400，样本比例 p=0.34。</p><div class="dopts"><button type="button" data-ok="0">Z，分母用 √(p(1−p)/n)</button><button type="button" data-ok="0">χ²(1)</button><button type="button" data-ok="1">Z，分母用 √(π₀(1−π₀)/n)</button><button type="button" data-ok="0">t(399)</button></div><p class="dwhy" hidden="">检验是在 H₀ 成立的前提下构造统计量，所以分母用 π₀。</p></div><div class="dq"><p><span class="dn">8</span>总体分布未知，n=64，样本标准差 s=12，估计总体均值。</p><div class="dopts"><button type="button" data-ok="1">Z：x̄ ± z·s/√n</button><button type="button" data-ok="0">χ²(63)</button><button type="button" data-ok="0">t(63)</button><button type="button" data-ok="0">条件不足</button></div><p class="dwhy" hidden="">大样本（n≥30）时由中心极限定理，σ 未知用 s 代替，仍按 Z 处理（此时 t(63) 与 Z 几乎相同）。</p></div><div class="dq"><p><span class="dn">9</span>H₀：μ=100，H₁：μ≠100，α=0.05，σ 已知。拒绝域是？</p><div class="dopts"><button type="button" data-ok="0">z &lt; −1.645</button><button type="button" data-ok="1">|z| &gt; 1.96</button><button type="button" data-ok="0">z &gt; 1.96</button><button type="button" data-ok="0">|z| &gt; 1.645</button></div><p class="dwhy" hidden="">双侧检验把 α 平分到两侧，每侧 0.025，临界值 z₀.₀₂₅=1.96。</p></div><div class="dq"><p><span class="dn">10</span>总体服从正态分布，σ 未知，n=16，s=4，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">χ²(15)</button><button type="button" data-ok="1">t(15)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">t(16)</button></div><p class="dwhy" hidden="">正态总体、小样本、σ 未知 → t 分布，自由度 n−1=15。</p></div><div class="dq"><p><span class="dn">11</span>总体分布未知，n=12，σ 未知，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">χ²(11)</button><button type="button" data-ok="1">条件不足：需要正态假定或更大的样本</button></div><p class="dwhy" hidden="">小样本且总体不一定正态时，Z 和 t 都没有依据。考题一般会写明"服从正态分布"。</p></div><div class="dq"><p><span class="dn">12</span>正态总体、n=10，求 σ² 的95%置信区间。区间下限 (n−1)s²/(?)</p><div class="dopts"><button type="button" data-ok="0">χ²₀.₀₅(9)=16.919</button><button type="button" data-ok="0">χ²₀.₀₂₅(10)=20.483</button><button type="button" data-ok="1">χ²₀.₀₂₅(9)=19.023</button><button type="button" data-ok="0">χ²₀.₉₇₅(9)=2.700</button></div><p class="dwhy" hidden="">下限的分母用较大的临界值（上侧 0.025 分位数），上限用较小的 χ²₀.₉₇₅(9)=2.700；自由度 n−1=9。</p></div><div class="dq"><p><span class="dn">13</span>检验某正态总体的方差是否等于 σ₀²。</p><div class="dopts"><button type="button" data-ok="0">F(n−1,n−1)</button><button type="button" data-ok="1">χ²(n−1)</button><button type="button" data-ok="0">t(n−1)</button><button type="button" data-ok="0">Z</button></div><p class="dwhy" hidden="">一个正态总体方差的检验用 χ²=(n−1)s²/σ₀²。</p></div><div class="dq"><p><span class="dn">14</span>检验两个正态总体的方差是否相等。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="1">F(n₁−1, n₂−1)</button><button type="button" data-ok="0">t(n₁+n₂−2)</button><button type="button" data-ok="0">χ²(n−1)</button></div><p class="dwhy" hidden="">两方差之比用 F=s₁²/s₂²。</p></div><div class="dq"><p><span class="dn">15</span>随机调查 400 人，其中 120 人支持，求支持率的95%置信区间。</p><div class="dopts"><button type="button" data-ok="1">Z：p ± z√(p(1−p)/n)</button><button type="button" data-ok="0">Z：p ± z√(π₀(1−π₀)/n)</button><button type="button" data-ok="0">χ²(399)</button><button type="button" data-ok="0">t(399)</button></div><p class="dwhy" hidden="">比例的区间估计用 Z，标准误里用样本比例 p；检验时才用 π₀。</p></div><div class="dq"><p><span class="dn">16</span>四种广告方式，共 20 个观测值，检验各方式的平均销量是否相同。</p><div class="dopts"><button type="button" data-ok="0">F(4,20)</button><button type="button" data-ok="0">χ²(3)</button><button type="button" data-ok="1">F(3,16)</button><button type="button" data-ok="0">t(19)</button></div><p class="dwhy" hidden="">一个分类因素、多个均值 → 单因素方差分析，F(k−1, n−k)=F(3,16)。</p></div><div class="dq"><p><span class="dn">17</span>某零件长度服从正态分布，总体标准差 σ=0.5 已知，抽取 n=10 件，求均值的95%置信区间。</p><div class="dopts"><button type="button" data-ok="0">t(9)：x̄ ± t·s/√n</button><button type="button" data-ok="0">χ²(9)</button><button type="button" data-ok="1">Z：x̄ ± z·σ/√n</button><button type="button" data-ok="0">条件不足</button></div><p class="dwhy" hidden="">总体正态且 σ 已知，不论样本大小都用 Z。</p></div><div class="dq"><p><span class="dn">18</span>n=20，样本相关系数 r=0.6，检验总体相关系数是否为0。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">t(19)</button><button type="button" data-ok="0">F(1,19)</button><button type="button" data-ok="1">t(18)</button></div><p class="dwhy" hidden="">t=|r|√((n−2)/(1−r²))∼t(n−2)=t(18)。</p></div><div class="dq"><p><span class="dn">19</span>两个正态总体，方差未知但相等，n₁=10、n₂=8，比较两个总体均值。</p><div class="dopts"><button type="button" data-ok="1">合并方差 t(16)</button><button type="button" data-ok="0">F(9,7)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">t(17)</button></div><p class="dwhy" hidden="">小样本且方差相等 → 合并方差 t，自由度 n₁+n₂−2=16（2022年计算题就是这种）。</p></div><div class="dq"><p><span class="dn">20</span>正态总体，n=16，s²=1.44，求总体方差的95%置信区间。</p><div class="dopts"><button type="button" data-ok="0">F(15,15)</button><button type="button" data-ok="0">t(15)</button><button type="button" data-ok="1">χ²(15)</button><button type="button" data-ok="0">χ²(16)</button></div><p class="dwhy" hidden="">方差的区间估计用 χ²，自由度 n−1=15；较大的临界值放在区间下限的分母里。</p></div><div class="dq"><p><span class="dn">21</span>同一批 15 名学生，培训前后各测一次成绩，检验培训是否有效。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="1">匹配样本 t(14)</button><button type="button" data-ok="0">两独立样本 t(28)</button><button type="button" data-ok="0">F(14,14)</button></div><p class="dwhy" hidden="">前后成绩一一对应，是匹配样本：对差值做单样本 t 检验，自由度 n−1=14。</p></div><div class="dq"><p><span class="dn">22</span>检验得到 P 值 = 0.03，显著性水平 α=0.01，结论是？</p><div class="dopts"><button type="button" data-ok="0">无法判断</button><button type="button" data-ok="0">拒绝 H₀</button><button type="button" data-ok="1">不拒绝 H₀</button><button type="button" data-ok="0">接受 H₁</button></div><p class="dwhy" hidden="">P 值不小于 α 就不拒绝 H₀（0.03 &gt; 0.01）；同样的 P 值在 α=0.05 时就会拒绝。</p></div><div class="dq"><p><span class="dn">23</span>两个独立大样本（n₁=80，n₂=100），比较两个总体均值。</p><div class="dopts"><button type="button" data-ok="1">Z</button><button type="button" data-ok="0">F(79,99)</button><button type="button" data-ok="0">t(178)</button><button type="button" data-ok="0">χ²(1)</button></div><p class="dwhy" hidden="">两个独立大样本用 Z，标准误为 √(s₁²/n₁+s₂²/n₂)。</p></div></div></div></section>
 
     <section class="sec prose" id="sec-zt" role="tabpanel" aria-labelledby="tab-zt"><h1 class="sec-title">五、真题补充</h1><h2>先看这个：分位数的两种记号</h2>
 
@@ -5323,6 +5379,8 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <p><strong>每天怎么安排</strong>：新题每天8–10道（"背诵"页顶上可以设），两周左右能过完第一轮；之后每天主要做到期题，约30–40分钟。背诵适合放在午后、碎片时间和睡前；早上起床先默写昨晚背的。</p>
 
+<p><strong>路上听</strong>："背诵"页的"通勤听"把有作答版的96道题做成了音频卡片：先听题目，停顿时在心里说出要点，"叮"一声后听答案。听完一题可以直接标会、模糊、不会，和复习进度同步。音频是零碎时间的补充，代替不了动笔默写。</p>
+
 <p><strong>复习进度存在哪</strong>：存在你打开网页的那个浏览器里。在微信里打开，退出或清理缓存时可能被清掉；更稳的是用手机浏览器打开并添加到主屏幕。"背诵"页的"进度与同步"里可以开启云同步，或复制一份备份码。</p>
 
 <h2>五、计算题：怎么练</h2>
@@ -5469,7 +5527,7 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <li>研究显示，一次中等强度的有氧运动之后，一段时间内注意力和执行功能会有小幅提升（Chang 等，2012）；长期运动还能改善睡眠和情绪。更实际的好处是：下午低谷时，运动比硬撑更能把状态拉回来。</li>
 
-<li>走路时可以听自己录的骨架，一举两得。</li>
+<li>走路时可以用"背诵"页的"通勤听"听音频卡片，一举两得。</li>
 
 <li><strong>不想运动，就只走10分钟。</strong> 把它当成提神工具，不当任务。一个小型实验比较了"吃一块甜食"和"快走10分钟"：快走后人更有精神、更不紧张；吃甜食后，一小时左右反而更累、更紧张（Thayer，1987）。所以犯困、嘴馋的时候，先出去走10分钟。</li>
 
@@ -5643,9 +5701,9 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <td>7:30–8:00</td>
 
-<td>路上：听432骨架录音，或者过单词</td>
+<td>路上：用"背诵"页的"通勤听"，听今天要复习的432音频卡片</td>
 
-<td>零碎时间做低耗任务</td>
+<td>先听题、自己说出要点，再听答案</td>
 
 </tr>
 
@@ -5803,7 +5861,7 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <td>20:45–21:30</td>
 
-<td>收拾回住处（学习的地方21:00关门）；路上听骨架录音或放松</td>
+<td>收拾回住处（学习的地方21:00关门）；路上可以再听几题音频卡片，或者放松</td>
 
 <td></td>
 
@@ -6625,6 +6683,8 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <li><strong>计算</strong>：按"公式与练习"页每一类的标准步骤练，每周做一次"选公式练习"。</li>
 
+<li><strong>路上听</strong>：通勤时用"背诵"页的"通勤听"，听今天要复习的题，听完直接标会、模糊、不会。</li>
+
 </ul>
 
 <h3>评估标准（参考线）</h3>
@@ -7008,6 +7068,10 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 <p class="refs">Ericsson、Krampe &amp; Tesch-Römer（1993），刻意练习，Psychological Review · Bjork &amp; Bjork（2011），合意困难 · Kornell &amp; Bjork（2008），学习者对间隔练习的误判，Psychological Science · Rohrer &amp; Taylor（2007），数学题交错练习，Instructional Science · Morris、Bransford &amp; Franks（1977），迁移适当加工，Journal of Verbal Learning and Verbal Behavior · Shiotsu &amp; Weir（2007），句法知识、词汇量与二语阅读，Language Testing · Mrazek 等（2013），专注训练、走神与 GRE 阅读，Psychological Science。</p></section>
 
   </main>
+
+
+
+  <button type="button" class="totop" id="totop" hidden="" aria-label="回到顶部">↑ 顶部</button>
 
 
 
@@ -8333,7 +8397,29 @@ function onMark(card, s) {
 
 /* ---------- filters ---------- */
 
-const filt = { lvl: "", st: "", ch: "" };
+const filt = { lvl: "", st: "", ch: "", q: "" };
+
+// 搜索：在题目、骨架、作答版、详解里找，多个词用空格隔开表示"都要有"
+
+const qText = new WeakMap();
+
+function matchQ(k) {
+
+  if (!filt.q) return true;
+
+  let t = qText.get(k);
+
+  if (t == null) {
+
+    t = [".card-t", ".bone", ".say", ".ans"].map(s => { const e = $(s, k); return e ? e.textContent : ""; }).join(" ").toLowerCase().replace(/\s+/g, "");
+
+    qText.set(k, t);
+
+  }
+
+  return filt.q.split(/\s+/).every(w => t.includes(w));
+
+}
 
 function matchSt(r, st) {
 
@@ -8359,7 +8445,7 @@ function applyFilter() {
 
     $$(".card", ch).forEach(k => {
 
-      const ok = okC && (!filt.lvl || k.dataset.lvl === filt.lvl) && matchSt(srs.recs[k.dataset.id], filt.st);
+      const ok = okC && (!filt.lvl || k.dataset.lvl === filt.lvl) && matchSt(srs.recs[k.dataset.id], filt.st) && matchQ(k);
 
       k.hidden = !ok;
 
@@ -8390,6 +8476,8 @@ function updFilterCounts() {
     if (filt.lvl && k.dataset.lvl !== filt.lvl) return;
 
     if (filt.ch && k.closest(".chap").id !== "ch-" + filt.ch) return;
+
+    if (!matchQ(k)) return;
 
     const r = srs.recs[k.dataset.id];
 
@@ -8466,6 +8554,8 @@ function updToday() {
   const weak = todayWeak(), nb = $("#go-night");
 
   if (nb) { nb.hidden = !weak.length; nb.textContent = "睡前复习（" + weak.length + " 题）"; }
+
+  lsUpd();
 
 }
 
@@ -8647,6 +8737,310 @@ function onFocusKey(e) {
 
 
 
+/* ---------- 通勤听：音频卡片（make_audio.py 生成；每题：题目 → 停顿 → 提示音 → 作答版） ---------- */
+
+const LS = { data: null, q: [], i: -1, label: "", urls: new Map(), byId: {}, byFile: {} };
+
+const normT = s => String(s).replace(/\s+/g, "");
+
+function buildListen() {
+
+  const a = MD.audio, box = $("#listen");
+
+  if (!a || !a.chapters || !box) return;
+
+  const idOf = {};
+
+  $$("#bs-body .card").forEach(k => { idOf[normT($(".card-t", k).textContent)] = k.dataset.id; });
+
+  const data = { base: a.base, ch: a.chapters.map(c => ({ n: c.n, name: c.name, secs: c.secs,
+
+    cards: c.cards.map(x => ({ id: idOf[normT(x.title)] || "", t: x.title, f: x.file, s: x.secs })) })) };
+
+  const mins = s => Math.max(1, Math.round(s / 60));
+
+  const n = data.ch.reduce((s, c) => s + c.cards.length, 0), total = data.ch.reduce((s, c) => s + c.secs, 0);
+
+  $("#ls-body").innerHTML = "<script type=\"application/json\" id=\"ls-data\">" + JSON.stringify(data).replace(/</g, "\\u003c") + "<\/script>" +
+
+    "<p class=\"note\">" + n + " 道题，" + data.ch.length + " 章，共约 " + mins(total) + " 分钟。听完一题可以直接标会、模糊、不会，和复习进度同步。</p>" +
+
+    "<div class=\"ls-row\"><button type=\"button\" class=\"btn pri\" id=\"ls-today\">听今天要复习的</button>" +
+
+    "<select id=\"ls-ch\" aria-label=\"按章节听\"><option value=\"\">按章节听…</option>" +
+
+    data.ch.map(c => "<option value=\"" + c.n + "\">第" + c.n + "章 " + esc(c.name) + "（" + c.cards.length + "题 · " + mins(c.secs) + "分钟）</option>").join("") + "</select>" +
+
+    "<button type=\"button\" class=\"linkbtn\" id=\"ls-resume\" hidden></button></div>" +
+
+    "<div class=\"ls-player\" id=\"ls-player\" hidden><p class=\"ls-now\"><span class=\"ls-pos\" id=\"ls-pos\"></span><span id=\"ls-title\"></span></p>" +
+
+    "<audio id=\"ls-audio\" controls preload=\"none\"></audio>" +
+
+    "<div class=\"ls-row\"><button type=\"button\" class=\"btn\" id=\"ls-prev\">上一题</button><button type=\"button\" class=\"btn\" id=\"ls-next\">下一题</button>" +
+
+    "<div class=\"seg-btns\" id=\"ls-rate\" role=\"group\" aria-label=\"播放速度\">" +
+
+    ["1", "1.25", "1.5"].map(v => "<button type=\"button\" data-v=\"" + v + "\" aria-pressed=\"" + (v === "1") + "\">" + v + "×</button>").join("") + "</div></div>" +
+
+    "<div class=\"ls-row ls-markrow\"><span>这题记得怎么样？</span><div class=\"marks\" id=\"ls-marks\" role=\"group\" aria-label=\"掌握程度\">" +
+
+    "<button type=\"button\" data-s=\"know\" aria-pressed=\"false\">会</button><button type=\"button\" data-s=\"fuzzy\" aria-pressed=\"false\">模糊</button><button type=\"button\" data-s=\"no\" aria-pressed=\"false\">不会</button></div></div></div>" +
+
+    "<div class=\"ls-row\"><button type=\"button\" class=\"linkbtn\" id=\"ls-cache\">出门前连着 Wi-Fi 点这里：先把今天要听的下载到手机</button></div>" +
+
+    "<p class=\"ls-msg\" id=\"ls-msg\" aria-live=\"polite\"></p>" +
+
+    "<p class=\"note\">想锁屏连着播、整章离线听：用 iPhone 自带的\"播客\"App 订阅。打开\"播客\" → 资料库 → 右上角\"…\" → \"通过 URL 关注节目\"，粘贴订阅地址。<button type=\"button\" class=\"linkbtn\" id=\"ls-feed\">复制订阅地址</button></p>";
+
+  box.hidden = false;
+
+}
+
+const lsRate = () => { const v = parseFloat(store.get("hht432.rate", 1)); return [1, 1.25, 1.5].includes(v) ? v : 1; };
+
+const lsMsg = t => { const m = $("#ls-msg"); if (m) m.textContent = t; };
+
+function lsTodayItems() {
+
+  const p = todayPlan();
+
+  return p.due.concat(p.fresh.slice(0, p.quota)).map(id => LS.byId[id]).filter(Boolean);
+
+}
+
+// 下载到本机：先查手机里的缓存，没有再联网；cacheOnly 时只读缓存、不花流量
+
+async function lsWarm(files, report, cacheOnly) {
+
+  let k = 0;
+
+  for (const f of files) {
+
+    if (!LS.urls.has(f)) {
+
+      const url = LS.data.base + f;
+
+      try {
+
+        let r = null, c = null;
+
+        if (window.caches) { try { c = await caches.open("dufe432-audio"); r = await c.match(url); } catch (e) { c = null; } }
+
+        if (!r && !cacheOnly) {
+
+          const net = await fetch(url);
+
+          if (net.ok) { if (c) { try { await c.put(url, net.clone()); } catch (e) {} } r = net; }
+
+        }
+
+        if (r) LS.urls.set(f, URL.createObjectURL(await r.blob()));
+
+      } catch (e) {}
+
+    }
+
+    k++;
+
+    if (report) report(k, files.length);
+
+  }
+
+}
+
+function lsMarks() {
+
+  const x = LS.q[LS.i], r = x && x.id ? srs.recs[x.id] : null, s = r ? r.s : "";
+
+  $$("#ls-marks button").forEach(b => { b.setAttribute("aria-pressed", String(b.dataset.s === s)); b.disabled = !(x && x.id); });
+
+}
+
+function lsPlay(i) {
+
+  if (!LS.q.length) return;
+
+  if (i >= LS.q.length) { lsMsg("这一组听完了。"); store.del("hht432.listen"); lsUpd(); return; }
+
+  LS.i = Math.max(0, i);
+
+  const x = LS.q[LS.i], au = $("#ls-audio");
+
+  au.src = LS.urls.get(x.f) || LS.data.base + x.f;
+
+  au.defaultPlaybackRate = au.playbackRate = lsRate();
+
+  const p = au.play();
+
+  if (p && p.catch) p.catch(() => {});
+
+  $("#ls-player").hidden = false;
+
+  $("#ls-pos").textContent = LS.label + " " + (LS.i + 1) + "/" + LS.q.length;
+
+  $("#ls-title").textContent = x.t;
+
+  lsMarks();
+
+  store.set("hht432.listen", { label: LS.label, files: LS.q.map(y => y.f), i: LS.i });
+
+  if ("mediaSession" in navigator && window.MediaMetadata) {
+
+    try { navigator.mediaSession.metadata = new MediaMetadata({ title: x.t, artist: "432 音频卡片", album: LS.label }); } catch (e) {}
+
+  }
+
+  lsWarm(LS.q.slice(LS.i + 1, LS.i + 4).map(y => y.f));
+
+}
+
+function lsStart(items, label, i) {
+
+  if (!items.length) { lsMsg("没有可以播放的题。"); return; }
+
+  LS.q = items; LS.label = label;
+
+  lsMsg("");
+
+  lsPlay(i || 0);
+
+}
+
+function lsUpd() {
+
+  if (!LS.data) return;
+
+  const n = lsTodayItems().length, b = $("#ls-today");
+
+  if (b) { b.textContent = n ? "听今天要复习的（" + n + " 题）" : "今天没有要复习的题"; b.disabled = !n; }
+
+  const st = store.get("hht432.listen", null), rb = $("#ls-resume");
+
+  if (rb) {
+
+    const ok = !!(st && st.files && st.i < st.files.length);
+
+    rb.hidden = !ok;
+
+    if (ok) rb.textContent = "继续上次：" + st.label + " " + (st.i + 1) + "/" + st.files.length;
+
+  }
+
+}
+
+function initListen() {
+
+  const el = $("#ls-data");
+
+  if (!el) return;
+
+  try { LS.data = JSON.parse(el.textContent); } catch (e) { return; }
+
+  LS.data.ch.forEach(c => c.cards.forEach(x => { LS.byFile[x.f] = x; if (x.id) LS.byId[x.id] = x; }));
+
+  const au = $("#ls-audio");
+
+  const setRate = v => {
+
+    store.set("hht432.rate", v);
+
+    au.defaultPlaybackRate = au.playbackRate = v;
+
+    $$("#ls-rate button").forEach(b => b.setAttribute("aria-pressed", String(parseFloat(b.dataset.v) === v)));
+
+  };
+
+  setRate(lsRate());
+
+  $("#ls-rate").addEventListener("click", e => { const b = e.target.closest("button"); if (b) setRate(parseFloat(b.dataset.v)); });
+
+  $("#ls-today").addEventListener("click", () => lsStart(lsTodayItems(), "今天要复习的"));
+
+  $("#ls-ch").addEventListener("change", e => {
+
+    const c = LS.data.ch.find(y => y.n === +e.target.value);
+
+    if (c) lsStart(c.cards, "第" + c.n + "章");
+
+    e.target.value = "";
+
+  });
+
+  $("#ls-resume").addEventListener("click", () => {
+
+    const st = store.get("hht432.listen", null);
+
+    if (st && st.files) lsStart(st.files.map(f => LS.byFile[f]).filter(Boolean), st.label, st.i);
+
+  });
+
+  $("#ls-prev").addEventListener("click", () => lsPlay(LS.i - 1));
+
+  $("#ls-next").addEventListener("click", () => lsPlay(LS.i + 1));
+
+  au.addEventListener("ended", () => lsPlay(LS.i + 1));
+
+  au.addEventListener("error", () => { if (au.getAttribute("src")) lsMsg("这一题没加载出来：检查一下网络，或者出门前先点下面的\"下载\"。"); });
+
+  $("#ls-marks").addEventListener("click", e => {
+
+    const b = e.target.closest("button"), x = LS.q[LS.i];
+
+    if (!b || !x || !x.id) return;
+
+    markCard(x.id, b.dataset.s);
+
+    $$(".card[data-id=\"" + x.id + "\"]").forEach(applyMark);
+
+    progress(); updToday(); updFilterCounts(); lsMarks();
+
+  });
+
+  $("#ls-cache").addEventListener("click", async () => {
+
+    const items = lsTodayItems();
+
+    if (!items.length) { lsMsg("今天没有要听的题。"); return; }
+
+    await lsWarm(items.map(x => x.f), (k, n) => lsMsg("正在下载 " + k + "/" + n + "…"));
+
+    const ok = items.filter(x => LS.urls.has(x.f)).length;
+
+    lsMsg(ok === items.length ? "今天要听的 " + ok + " 题都下好了，路上没网也能听。" : "下好了 " + ok + "/" + items.length + " 题，没下好的路上会联网播放。");
+
+  });
+
+  $("#ls-feed").addEventListener("click", async () => {
+
+    const url = LS.data.base + "feed.xml";
+
+    lsMsg((await copyText(url)) ? "已复制订阅地址，去\"播客\"App 里粘贴。" : "订阅地址：" + url);
+
+  });
+
+  if ("mediaSession" in navigator) {
+
+    try {
+
+      navigator.mediaSession.setActionHandler("nexttrack", () => lsPlay(LS.i + 1));
+
+      navigator.mediaSession.setActionHandler("previoustrack", () => lsPlay(LS.i - 1));
+
+    } catch (e) {}
+
+  }
+
+  lsUpd();
+
+  // 之前下载过的，直接从手机里取出来（不联网），没网也能播
+
+  lsWarm(lsTodayItems().map(x => x.f), null, true);
+
+}
+
+
+
 function initRecite() {
 
   const body = $("#bs-body");
@@ -8658,6 +9052,8 @@ function initRecite() {
     wrapTables(body);
 
     buildCards(body);
+
+    buildListen();
 
   }
 
@@ -8725,6 +9121,16 @@ function initRecite() {
 
   });
 
+  let qTimer = 0;
+
+  $("#f-q").addEventListener("input", e => {
+
+    clearTimeout(qTimer);
+
+    qTimer = setTimeout(() => { filt.q = e.target.value.trim().toLowerCase(); applyFilter(); }, 150);
+
+  });
+
   const npd = $("#new-per-day");
 
   npd.value = String(newPerDay());
@@ -8746,6 +9152,34 @@ function initRecite() {
   $("#wx-close").addEventListener("click", () => { $("#wx-warn").hidden = true; store.set("hht432.wxok", true); });
 
   applyFilter(); updToday(); saveState();
+
+  initListen();
+
+}
+
+// 页面很长：往下翻一屏半以后，右下角出现"回到顶部"（回到当前页的开头）
+
+function initToTop() {
+
+  const b = $("#totop");
+
+  if (!b) return;
+
+  const upd = () => { b.hidden = window.scrollY < window.innerHeight * 1.5 || !$("#focus").hidden; };
+
+  window.addEventListener("scroll", upd, { passive: true });
+
+  b.addEventListener("click", () => {
+
+    const sec = $("main > section:not([hidden])");
+
+    const top = sec ? sec.getBoundingClientRect().top + window.scrollY - $(".tabs").offsetHeight : 0;
+
+    window.scrollTo({ top: Math.max(0, top), behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+
+  });
+
+  upd();
 
 }
 
@@ -9258,6 +9692,8 @@ if (/(?:^|[?&])prerender=1(?:&|$)/.test(location.search)) {
   measure();
 
   initTheme();
+
+  initToTop();
 
   restoreLocal().then(initSync);
 

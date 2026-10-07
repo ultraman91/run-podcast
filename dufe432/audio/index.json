@@ -1,0 +1,709 @@
+{
+ "base": "https://ultraman91.github.io/run-podcast/dufe432/audio/",
+ "voice": "zh-CN-XiaoxiaoNeural",
+ "built": "2026-10-07",
+ "chapters": [
+  {
+   "n": 1,
+   "name": "导论",
+   "file": "ch01.m4a",
+   "cards": [
+    {
+     "title": "统计学、描述统计、推断统计",
+     "level": "必背",
+     "file": "cards/c01-01.m4a",
+     "secs": 54
+    },
+    {
+     "title": "总体、样本、参数、统计量（联系与区别）",
+     "level": "必背",
+     "file": "cards/c01-02.m4a",
+     "secs": 54
+    },
+    {
+     "title": "分类数据、顺序数据、数值型数据的区别",
+     "level": "必背",
+     "file": "cards/c01-03.m4a",
+     "secs": 60
+    },
+    {
+     "title": "观测数据与实验数据的区别",
+     "level": "必背",
+     "file": "cards/c01-04.m4a",
+     "secs": 82
+    },
+    {
+     "title": "变量；分类变量、数值型变量、离散型与连续型变量",
+     "level": "必背",
+     "file": "cards/c01-05.m4a",
+     "secs": 54
+    },
+    {
+     "title": "从统计学角度分析\"数据经济\"",
+     "level": "补充",
+     "file": "cards/c01-06.m4a",
+     "secs": 74
+    }
+   ],
+   "secs": 392,
+   "bytes": 2084760
+  },
+  {
+   "n": 2,
+   "name": "数据的搜集",
+   "file": "ch02.m4a",
+   "cards": [
+    {
+     "title": "概率抽样与非概率抽样的区别",
+     "level": "必背",
+     "file": "cards/c02-01.m4a",
+     "secs": 60
+    },
+    {
+     "title": "五种概率抽样：做法、优点、局限、适用场合",
+     "level": "必背",
+     "file": "cards/c02-02.m4a",
+     "secs": 85
+    },
+    {
+     "title": "五种非概率抽样",
+     "level": "必背",
+     "file": "cards/c02-03.m4a",
+     "secs": 55
+    },
+    {
+     "title": "分层抽样与整群抽样的异同与适用场合",
+     "level": "必背",
+     "file": "cards/c02-04.m4a",
+     "secs": 61
+    },
+    {
+     "title": "统计数据的误差：抽样误差与非抽样误差（原因与控制）",
+     "level": "必背",
+     "file": "cards/c02-05.m4a",
+     "secs": 66
+    },
+    {
+     "title": "抽样框",
+     "level": "必背",
+     "file": "cards/c02-06.m4a",
+     "secs": 35
+    },
+    {
+     "title": "抽样调查与典型调查的异同",
+     "level": "必背",
+     "file": "cards/c02-07.m4a",
+     "secs": 80
+    },
+    {
+     "title": "数据来源：直接来源与间接来源（二手资料的注意事项）",
+     "level": "常考",
+     "file": "cards/c02-08.m4a",
+     "secs": 48
+    }
+   ],
+   "secs": 504,
+   "bytes": 2687094
+  },
+  {
+   "n": 3,
+   "name": "数据的图表展示",
+   "file": "ch03.m4a",
+   "cards": [
+    {
+     "title": "频数、频数分布、组中值",
+     "level": "必背",
+     "file": "cards/c03-01.m4a",
+     "secs": 44
+    },
+    {
+     "title": "统计分组的作用、分组标志的选择、分组步骤",
+     "level": "必背",
+     "file": "cards/c03-02.m4a",
+     "secs": 52
+    },
+    {
+     "title": "直方图与条形图、直方图与茎叶图的区别",
+     "level": "必背",
+     "file": "cards/c03-03.m4a",
+     "secs": 55
+    },
+    {
+     "title": "品质数据与数值型数据的图示方法",
+     "level": "必背",
+     "file": "cards/c03-04.m4a",
+     "secs": 48
+    },
+    {
+     "title": "箱线图（盒形图）的绘制原理与优缺点",
+     "level": "常考",
+     "file": "cards/c03-05.m4a",
+     "secs": 51
+    }
+   ],
+   "secs": 265,
+   "bytes": 1354600
+  },
+  {
+   "n": 4,
+   "name": "数据的概括性度量",
+   "file": "ch04.m4a",
+   "cards": [
+    {
+     "title": "集中趋势：众数、中位数、平均数的特点与关系",
+     "level": "必背",
+     "file": "cards/c04-01.m4a",
+     "secs": 63
+    },
+    {
+     "title": "几何平均数与调和平均数",
+     "level": "必背",
+     "file": "cards/c04-02.m4a",
+     "secs": 48
+    },
+    {
+     "title": "离散程度的度量及各自特点",
+     "level": "必背",
+     "file": "cards/c04-03.m4a",
+     "secs": 64
+    },
+    {
+     "title": "为什么要计算离散系数（变异系数）",
+     "level": "必背",
+     "file": "cards/c04-04.m4a",
+     "secs": 50
+    },
+    {
+     "title": "分布形状：偏态与峰态",
+     "level": "必背",
+     "file": "cards/c04-05.m4a",
+     "secs": 49
+    },
+    {
+     "title": "标准分数",
+     "level": "必背",
+     "file": "cards/c04-06.m4a",
+     "secs": 45
+    },
+    {
+     "title": "如何对一批数据做描述统计（论述框架）",
+     "level": "必背",
+     "file": "cards/c04-07.m4a",
+     "secs": 60
+    }
+   ],
+   "secs": 395,
+   "bytes": 2062626
+  },
+  {
+   "n": 5,
+   "name": "概率与概率分布",
+   "file": "ch05.m4a",
+   "cards": [
+    {
+     "title": "随机事件、必然事件、不可能事件、样本空间",
+     "level": "必背",
+     "file": "cards/c05-01.m4a",
+     "secs": 42
+    },
+    {
+     "title": "概率的定义方法；频率与概率的关系",
+     "level": "必背",
+     "file": "cards/c05-02.m4a",
+     "secs": 58
+    },
+    {
+     "title": "事件的独立与互斥（举例说明区别）",
+     "level": "必背",
+     "file": "cards/c05-03.m4a",
+     "secs": 49
+    },
+    {
+     "title": "全概率公式与贝叶斯公式（及其思想）",
+     "level": "必背",
+     "file": "cards/c05-04.m4a",
+     "secs": 66
+    },
+    {
+     "title": "随机变量、分布函数、概率函数（分布列）、概率密度函数",
+     "level": "必背",
+     "file": "cards/c05-05.m4a",
+     "secs": 55
+    },
+    {
+     "title": "数学期望、方差、协方差",
+     "level": "必背",
+     "file": "cards/c05-06.m4a",
+     "secs": 64
+    },
+    {
+     "title": "二维随机变量：联合分布、边缘分布、条件分布、独立性",
+     "level": "必背",
+     "file": "cards/c05-07.m4a",
+     "secs": 51
+    },
+    {
+     "title": "常用分布（计算题直接用）",
+     "level": "必背",
+     "file": "cards/c05-08.m4a",
+     "secs": 62
+    }
+   ],
+   "secs": 462,
+   "bytes": 2433960
+  },
+  {
+   "n": 6,
+   "name": "统计量及其抽样分布",
+   "file": "ch06.m4a",
+   "cards": [
+    {
+     "title": "统计量；统计量中为什么不含未知参数",
+     "level": "必背",
+     "file": "cards/c06-01.m4a",
+     "secs": 34
+    },
+    {
+     "title": "总体分布、样本分布、抽样分布",
+     "level": "必背",
+     "file": "cards/c06-02.m4a",
+     "secs": 50
+    },
+    {
+     "title": "中心极限定理及其意义",
+     "level": "必背",
+     "file": "cards/c06-03.m4a",
+     "secs": 58
+    },
+    {
+     "title": "三大分布（χ²、t、F）：定义、性质、用途，是不是统计量",
+     "level": "必背",
+     "file": "cards/c06-04.m4a",
+     "secs": 63
+    },
+    {
+     "title": "充分统计量",
+     "level": "必背",
+     "file": "cards/c06-05.m4a",
+     "secs": 45
+    },
+    {
+     "title": "自由度",
+     "level": "必背",
+     "file": "cards/c06-06.m4a",
+     "secs": 43
+    },
+    {
+     "title": "次序统计量（最小值、最大值的分布）",
+     "level": "常考",
+     "file": "cards/c06-07.m4a",
+     "secs": 44
+    },
+    {
+     "title": "抽样平均误差及其影响因素",
+     "level": "常考",
+     "file": "cards/c06-08.m4a",
+     "secs": 38
+    },
+    {
+     "title": "数字特征计算：D(Xᵢ-X̄) 与 Cov(Xᵢ-X̄,Xⱼ-X̄)",
+     "level": "常考",
+     "file": "cards/c06-09.m4a",
+     "secs": 50
+    },
+    {
+     "title": "对统计模拟的理解",
+     "level": "补充",
+     "file": "cards/c06-10.m4a",
+     "secs": 75
+    }
+   ],
+   "secs": 516,
+   "bytes": 2635018
+  },
+  {
+   "n": 7,
+   "name": "参数估计",
+   "file": "ch07.m4a",
+   "cards": [
+    {
+     "title": "估计量与估计值；点估计与区间估计的区别",
+     "level": "必背",
+     "file": "cards/c07-01.m4a",
+     "secs": 52
+    },
+    {
+     "title": "置信区间与置信水平（置信度）的含义",
+     "level": "必背",
+     "file": "cards/c07-02.m4a",
+     "secs": 53
+    },
+    {
+     "title": "评价估计量的标准：无偏性、有效性、一致性",
+     "level": "必背",
+     "file": "cards/c07-03.m4a",
+     "secs": 43
+    },
+    {
+     "title": "矩估计与极大似然估计：思想、步骤、特点",
+     "level": "必背",
+     "file": "cards/c07-04.m4a",
+     "secs": 58
+    },
+    {
+     "title": "一个总体参数的区间估计公式",
+     "level": "必背",
+     "file": "cards/c07-05.m4a",
+     "secs": 54
+    },
+    {
+     "title": "两个总体参数的区间估计；独立样本与匹配样本",
+     "level": "常考",
+     "file": "cards/c07-06.m4a",
+     "secs": 47
+    },
+    {
+     "title": "样本量的确定及影响因素（\"问卷发多少份\"论述）",
+     "level": "必背",
+     "file": "cards/c07-07.m4a",
+     "secs": 58
+    },
+    {
+     "title": "如何解决精度与置信度之间的矛盾",
+     "level": "常考",
+     "file": "cards/c07-08.m4a",
+     "secs": 31
+    }
+   ],
+   "secs": 410,
+   "bytes": 2106435
+  },
+  {
+   "n": 8,
+   "name": "假设检验",
+   "file": "ch08.m4a",
+   "cards": [
+    {
+     "title": "假设检验的概念、基本思想（逻辑）与作用",
+     "level": "必背",
+     "file": "cards/c08-01.m4a",
+     "secs": 53
+    },
+    {
+     "title": "假设检验的步骤；如何设置原假设与备择假设",
+     "level": "必背",
+     "file": "cards/c08-02.m4a",
+     "secs": 59
+    },
+    {
+     "title": "两类错误（拒真、取伪）的定义、关系与控制",
+     "level": "必背",
+     "file": "cards/c08-03.m4a",
+     "secs": 54
+    },
+    {
+     "title": "显著性水平、P值、二者的区别；统计显著",
+     "level": "必背",
+     "file": "cards/c08-04.m4a",
+     "secs": 55
+    },
+    {
+     "title": "为什么说\"不拒绝H0\"而不说\"接受H0\"",
+     "level": "必背",
+     "file": "cards/c08-05.m4a",
+     "secs": 51
+    },
+    {
+     "title": "小概率原理及其在假设检验中的作用",
+     "level": "必背",
+     "file": "cards/c08-06.m4a",
+     "secs": 48
+    },
+    {
+     "title": "参数估计与假设检验的异同",
+     "level": "常考",
+     "file": "cards/c08-07.m4a",
+     "secs": 49
+    },
+    {
+     "title": "检验统计量的选择",
+     "level": "必背",
+     "file": "cards/c08-08.m4a",
+     "secs": 46
+    }
+   ],
+   "secs": 430,
+   "bytes": 2207784
+  },
+  {
+   "n": 9,
+   "name": "分类数据分析",
+   "file": "ch09.m4a",
+   "cards": [
+    {
+     "title": "列联表；列联分析原理（χ²统计量的构造原理）",
+     "level": "必背",
+     "file": "cards/c09-01.m4a",
+     "secs": 61
+    },
+    {
+     "title": "列联表中相关性的度量：φ系数、列联系数C、V系数",
+     "level": "必背",
+     "file": "cards/c09-02.m4a",
+     "secs": 71
+    },
+    {
+     "title": "拟合优度检验；使用χ²检验的注意事项",
+     "level": "常考",
+     "file": "cards/c09-03.m4a",
+     "secs": 45
+    }
+   ],
+   "secs": 193,
+   "bytes": 1019914
+  },
+  {
+   "n": 10,
+   "name": "方差分析",
+   "file": "ch10.m4a",
+   "cards": [
+    {
+     "title": "方差分析的概念、基本思想与原理；为什么不用两两 t 检验",
+     "level": "必背",
+     "file": "cards/c10-01.m4a",
+     "secs": 61
+    },
+    {
+     "title": "方差分析的基本假定",
+     "level": "必背",
+     "file": "cards/c10-02.m4a",
+     "secs": 28
+    },
+    {
+     "title": "单因素方差分析的步骤与方差分析表",
+     "level": "必背",
+     "file": "cards/c10-03.m4a",
+     "secs": 62
+    },
+    {
+     "title": "方差分析的类型及区别（单因素、无交互/有交互的双因素）",
+     "level": "必背",
+     "file": "cards/c10-04.m4a",
+     "secs": 55
+    },
+    {
+     "title": "多重比较（LSD方法）",
+     "level": "常考",
+     "file": "cards/c10-05.m4a",
+     "secs": 38
+    }
+   ],
+   "secs": 259,
+   "bytes": 1316207
+  },
+  {
+   "n": 11,
+   "name": "一元线性回归",
+   "file": "ch11.m4a",
+   "cards": [
+    {
+     "title": "相关关系的概念与特点；相关分析要解决的问题",
+     "level": "必背",
+     "file": "cards/c11-01.m4a",
+     "secs": 49
+    },
+    {
+     "title": "相关系数的定义与性质；为什么要检验、怎么检验",
+     "level": "必背",
+     "file": "cards/c11-02.m4a",
+     "secs": 56
+    },
+    {
+     "title": "相关分析与回归分析的联系和区别",
+     "level": "必背",
+     "file": "cards/c11-03.m4a",
+     "secs": 56
+    },
+    {
+     "title": "回归分析的概念与一般过程；最小二乘原理",
+     "level": "必背",
+     "file": "cards/c11-04.m4a",
+     "secs": 50
+    },
+    {
+     "title": "一元线性回归模型的基本假定",
+     "level": "必背",
+     "file": "cards/c11-05.m4a",
+     "secs": 45
+    },
+    {
+     "title": "SST、SSR、SSE 与判定系数 R²；估计标准误差",
+     "level": "必背",
+     "file": "cards/c11-06.m4a",
+     "secs": 62
+    },
+    {
+     "title": "F 检验与 t 检验的作用；一元回归中二者等价",
+     "level": "必背",
+     "file": "cards/c11-07.m4a",
+     "secs": 55
+    },
+    {
+     "title": "置信区间估计与预测区间估计的区别",
+     "level": "必背",
+     "file": "cards/c11-08.m4a",
+     "secs": 45
+    },
+    {
+     "title": "回归分析结果的评价（如何判断回归方程的优劣）",
+     "level": "常考",
+     "file": "cards/c11-09.m4a",
+     "secs": 42
+    }
+   ],
+   "secs": 477,
+   "bytes": 2452506
+  },
+  {
+   "n": 12,
+   "name": "多元线性回归",
+   "file": "ch12.m4a",
+   "cards": [
+    {
+     "title": "多元线性回归模型及基本假定（\"写一个模型并谈理解\"论述）",
+     "level": "必背",
+     "file": "cards/c12-01.m4a",
+     "secs": 68
+    },
+    {
+     "title": "多重判定系数与调整的多重判定系数",
+     "level": "必背",
+     "file": "cards/c12-02.m4a",
+     "secs": 47
+    },
+    {
+     "title": "多重共线性：含义、影响、判别方法、处理",
+     "level": "必背",
+     "file": "cards/c12-03.m4a",
+     "secs": 56
+    },
+    {
+     "title": "变量选择：向前选择、向后剔除、逐步回归",
+     "level": "必背",
+     "file": "cards/c12-04.m4a",
+     "secs": 45
+    },
+    {
+     "title": "读懂回归输出表（2025计算3）",
+     "level": "常考",
+     "file": "cards/c12-05.m4a",
+     "secs": 43
+    }
+   ],
+   "secs": 275,
+   "bytes": 1419225
+  },
+  {
+   "n": 13,
+   "name": "时间序列分析和预测",
+   "file": "ch13.m4a",
+   "cards": [
+    {
+     "title": "时间序列的构成要素",
+     "level": "必背",
+     "file": "cards/c13-01.m4a",
+     "secs": 47
+    },
+    {
+     "title": "平稳序列与非平稳序列",
+     "level": "必背",
+     "file": "cards/c13-02.m4a",
+     "secs": 32
+    },
+    {
+     "title": "长期趋势及其测定方法",
+     "level": "必背",
+     "file": "cards/c13-03.m4a",
+     "secs": 46
+    },
+    {
+     "title": "季节变动（季节波动）及其测定方法；季节指数",
+     "level": "必背",
+     "file": "cards/c13-04.m4a",
+     "secs": 53
+    },
+    {
+     "title": "时间序列的速度分析指标及其关系",
+     "level": "必背",
+     "file": "cards/c13-05.m4a",
+     "secs": 50
+    },
+    {
+     "title": "指数平滑法：基本含义与步骤",
+     "level": "必背",
+     "file": "cards/c13-06.m4a",
+     "secs": 53
+    },
+    {
+     "title": "时间序列的预测程序；平稳序列的预测方法",
+     "level": "常考",
+     "file": "cards/c13-07.m4a",
+     "secs": 36
+    }
+   ],
+   "secs": 334,
+   "bytes": 1673181
+  },
+  {
+   "n": 14,
+   "name": "指数",
+   "file": "ch14.m4a",
+   "cards": [
+    {
+     "title": "指数的概念、特点（性质）、作用与分类",
+     "level": "必背",
+     "file": "cards/c14-01.m4a",
+     "secs": 54
+    },
+    {
+     "title": "同度量因素及其作用",
+     "level": "必背",
+     "file": "cards/c14-02.m4a",
+     "secs": 40
+    },
+    {
+     "title": "拉氏指数与帕氏指数的区别",
+     "level": "必背",
+     "file": "cards/c14-03.m4a",
+     "secs": 53
+    },
+    {
+     "title": "指数体系及其作用；指数因素分析",
+     "level": "必背",
+     "file": "cards/c14-04.m4a",
+     "secs": 49
+    },
+    {
+     "title": "加权综合指数与加权平均指数的区别与联系",
+     "level": "必背",
+     "file": "cards/c14-05.m4a",
+     "secs": 43
+    },
+    {
+     "title": "居民消费价格指数（CPI）及其作用",
+     "level": "必背",
+     "file": "cards/c14-06.m4a",
+     "secs": 53
+    },
+    {
+     "title": "构建综合评价指数时要考虑的问题（\"编制居民幸福生活指数\"论述）",
+     "level": "必背",
+     "file": "cards/c14-07.m4a",
+     "secs": 70
+    }
+   ],
+   "secs": 376,
+   "bytes": 1934374
+  }
+ ]
+}
