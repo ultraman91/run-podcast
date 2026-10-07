@@ -151,5 +151,15 @@
       <itunes:duration>376</itunes:duration>
       <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
     </item>
+    <item>
+      <title>论述专题（6题）</title>
+      <itunes:episode>15</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://ultraman91.github.io/run-podcast/dufe432/audio/ch15.m4a" length="2447895" type="audio/x-m4a"/>
+      <guid isPermaLink="false">dufe432-ch15-4ef95f6e</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>448</itunes:duration>
+      <description>每题先听题目，停顿时在心里说出要点，听到提示音再听答案。</description>
+    </item>
   </channel>
 </rss>
