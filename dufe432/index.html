@@ -7279,7 +7279,7 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <p>交错练习：每题先判断该用哪个统计量、拒绝域在哪一侧、查哪个临界值，再看解释。每次打开，题目和选项的顺序都会打乱。</p>
 
-<div id="drill"><div class="dscore"><span id="d-score">已答 0 / 23</span><button type="button" class="linkbtn" id="d-reset">打乱重来</button></div><div class="drill"><div class="dq"><p><span class="dn">1</span>两个独立大样本（n₁=80，n₂=100），比较两个总体均值。</p><div class="dopts"><button type="button" data-ok="0">F(79,99)</button><button type="button" data-ok="0">t(178)</button><button type="button" data-ok="1">Z</button><button type="button" data-ok="0">χ²(1)</button></div><p class="dwhy" hidden="">两个独立大样本用 Z，标准误为 √(s₁²/n₁+s₂²/n₂)。</p></div><div class="dq"><p><span class="dn">2</span>检验某正态总体的方差是否等于 σ₀²。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">F(n−1,n−1)</button><button type="button" data-ok="0">t(n−1)</button><button type="button" data-ok="1">χ²(n−1)</button></div><p class="dwhy" hidden="">一个正态总体方差的检验用 χ²=(n−1)s²/σ₀²。</p></div><div class="dq"><p><span class="dn">3</span>随机调查 400 人，其中 120 人支持，求支持率的95%置信区间。</p><div class="dopts"><button type="button" data-ok="0">χ²(399)</button><button type="button" data-ok="1">Z：p ± z√(p(1−p)/n)</button><button type="button" data-ok="0">Z：p ± z√(π₀(1−π₀)/n)</button><button type="button" data-ok="0">t(399)</button></div><p class="dwhy" hidden="">比例的区间估计用 Z，标准误里用样本比例 p；检验时才用 π₀。</p></div><div class="dq"><p><span class="dn">4</span>检验两个正态总体的方差是否相等。</p><div class="dopts"><button type="button" data-ok="0">χ²(n−1)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">t(n₁+n₂−2)</button><button type="button" data-ok="1">F(n₁−1, n₂−1)</button></div><p class="dwhy" hidden="">两方差之比用 F=s₁²/s₂²。</p></div><div class="dq"><p><span class="dn">5</span>总体分布未知，n=12，σ 未知，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">χ²(11)</button><button type="button" data-ok="1">条件不足：需要正态假定或更大的样本</button><button type="button" data-ok="0">t(11)</button></div><p class="dwhy" hidden="">小样本且总体不一定正态时，Z 和 t 都没有依据。考题一般会写明"服从正态分布"。</p></div><div class="dq"><p><span class="dn">6</span>正态总体、σ 未知、n=16，求均值的95%置信区间，临界值取？</p><div class="dopts"><button type="button" data-ok="0">t₀.₀₂₅(16)=2.120</button><button type="button" data-ok="0">t₀.₀₅(15)=1.753</button><button type="button" data-ok="1">t₀.₀₂₅(15)=2.131</button><button type="button" data-ok="0">z₀.₀₂₅=1.96</button></div><p class="dwhy" hidden="">区间估计是双侧的：用 α/2=0.025；自由度 n−1=15。</p></div><div class="dq"><p><span class="dn">7</span>一元线性回归，n=12，检验线性关系是否显著。</p><div class="dopts"><button type="button" data-ok="0">F(2,10)</button><button type="button" data-ok="1">F(1,10)，等价于 t(10)</button><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="0">χ²(10)</button></div><p class="dwhy" hidden="">一元回归 F=MSR/MSE∼F(1, n−2)，与 t(n−2) 检验等价（F=t²）。</p></div><div class="dq"><p><span class="dn">8</span>检验得到 P 值 = 0.03，显著性水平 α=0.01，结论是？</p><div class="dopts"><button type="button" data-ok="0">拒绝 H₀</button><button type="button" data-ok="0">接受 H₁</button><button type="button" data-ok="1">不拒绝 H₀</button><button type="button" data-ok="0">无法判断</button></div><p class="dwhy" hidden="">P 值不小于 α 就不拒绝 H₀（0.03 &gt; 0.01）；同样的 P 值在 α=0.05 时就会拒绝。</p></div><div class="dq"><p><span class="dn">9</span>总体服从正态分布，σ 未知，n=16，s=4，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">χ²(15)</button><button type="button" data-ok="0">t(16)</button><button type="button" data-ok="1">t(15)</button><button type="button" data-ok="0">Z</button></div><p class="dwhy" hidden="">正态总体、小样本、σ 未知 → t 分布，自由度 n−1=15。</p></div><div class="dq"><p><span class="dn">10</span>H₀：μ≥100，H₁：μ&lt;100，α=0.05，正态总体、σ 已知。拒绝域是？</p><div class="dopts"><button type="button" data-ok="0">z &lt; −1.96</button><button type="button" data-ok="0">z &gt; 1.645</button><button type="button" data-ok="1">z &lt; −1.645</button><button type="button" data-ok="0">|z| &gt; 1.96</button></div><p class="dwhy" hidden="">拒绝域跟着 H₁ 走：H₁ 是"&lt;"，拒绝域在左侧；单侧检验用 z₀.₀₅=1.645，不用 1.96。</p></div><div class="dq"><p><span class="dn">11</span>总体分布未知，n=64，样本标准差 s=12，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">χ²(63)</button><button type="button" data-ok="0">条件不足</button><button type="button" data-ok="1">Z：x̄ ± z·s/√n</button><button type="button" data-ok="0">t(63)</button></div><p class="dwhy" hidden="">大样本（n≥30）时由中心极限定理，σ 未知用 s 代替，仍按 Z 处理（此时 t(63) 与 Z 几乎相同）。</p></div><div class="dq"><p><span class="dn">12</span>多元回归有 3 个自变量、15 个观测值，检验回归方程整体是否显著。</p><div class="dopts"><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="1">F(3,11)</button><button type="button" data-ok="0">F(2,12)</button><button type="button" data-ok="0">F(3,14)</button></div><p class="dwhy" hidden="">F(k, n−k−1)=F(3,11)，2025年计算题就是这个。</p></div><div class="dq"><p><span class="dn">13</span>检验 H₀：π=0.3，样本 n=400，样本比例 p=0.34。</p><div class="dopts"><button type="button" data-ok="0">Z，分母用 √(p(1−p)/n)</button><button type="button" data-ok="1">Z，分母用 √(π₀(1−π₀)/n)</button><button type="button" data-ok="0">t(399)</button><button type="button" data-ok="0">χ²(1)</button></div><p class="dwhy" hidden="">检验是在 H₀ 成立的前提下构造统计量，所以分母用 π₀。</p></div><div class="dq"><p><span class="dn">14</span>同一批 15 名学生，培训前后各测一次成绩，检验培训是否有效。</p><div class="dopts"><button type="button" data-ok="0">两独立样本 t(28)</button><button type="button" data-ok="0">F(14,14)</button><button type="button" data-ok="1">匹配样本 t(14)</button><button type="button" data-ok="0">Z</button></div><p class="dwhy" hidden="">前后成绩一一对应，是匹配样本：对差值做单样本 t 检验，自由度 n−1=14。</p></div><div class="dq"><p><span class="dn">15</span>两个正态总体，方差未知但相等，n₁=10、n₂=8，比较两个总体均值。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">F(9,7)</button><button type="button" data-ok="0">t(17)</button><button type="button" data-ok="1">合并方差 t(16)</button></div><p class="dwhy" hidden="">小样本且方差相等 → 合并方差 t，自由度 n₁+n₂−2=16（2022年计算题就是这种）。</p></div><div class="dq"><p><span class="dn">16</span>正态总体、n=10，求 σ² 的95%置信区间。区间下限 (n−1)s²/(?)</p><div class="dopts"><button type="button" data-ok="0">χ²₀.₉₇₅(9)=2.700</button><button type="button" data-ok="1">χ²₀.₀₂₅(9)=19.023</button><button type="button" data-ok="0">χ²₀.₀₅(9)=16.919</button><button type="button" data-ok="0">χ²₀.₀₂₅(10)=20.483</button></div><p class="dwhy" hidden="">下限的分母用较大的临界值（上侧 0.025 分位数），上限用较小的 χ²₀.₉₇₅(9)=2.700；自由度 n−1=9。</p></div><div class="dq"><p><span class="dn">17</span>检验一枚骰子六个点数出现的频数是否符合均匀分布。</p><div class="dopts"><button type="button" data-ok="1">χ²(5)</button><button type="button" data-ok="0">χ²(6)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">F(5,6)</button></div><p class="dwhy" hidden="">拟合优度检验，自由度 = 类别数 − 1 = 5。</p></div><div class="dq"><p><span class="dn">18</span>某零件长度服从正态分布，总体标准差 σ=0.5 已知，抽取 n=10 件，求均值的95%置信区间。</p><div class="dopts"><button type="button" data-ok="0">条件不足</button><button type="button" data-ok="0">t(9)：x̄ ± t·s/√n</button><button type="button" data-ok="1">Z：x̄ ± z·σ/√n</button><button type="button" data-ok="0">χ²(9)</button></div><p class="dwhy" hidden="">总体正态且 σ 已知，不论样本大小都用 Z。</p></div><div class="dq"><p><span class="dn">19</span>n=20，样本相关系数 r=0.6，检验总体相关系数是否为0。</p><div class="dopts"><button type="button" data-ok="0">t(19)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="1">t(18)</button><button type="button" data-ok="0">F(1,19)</button></div><p class="dwhy" hidden="">t=|r|√((n−2)/(1−r²))∼t(n−2)=t(18)。</p></div><div class="dq"><p><span class="dn">20</span>H₀：μ=100，H₁：μ≠100，α=0.05，σ 已知。拒绝域是？</p><div class="dopts"><button type="button" data-ok="0">z &lt; −1.645</button><button type="button" data-ok="0">z &gt; 1.96</button><button type="button" data-ok="1">|z| &gt; 1.96</button><button type="button" data-ok="0">|z| &gt; 1.645</button></div><p class="dwhy" hidden="">双侧检验把 α 平分到两侧，每侧 0.025，临界值 z₀.₀₂₅=1.96。</p></div><div class="dq"><p><span class="dn">21</span>四种广告方式，共 20 个观测值，检验各方式的平均销量是否相同。</p><div class="dopts"><button type="button" data-ok="1">F(3,16)</button><button type="button" data-ok="0">F(4,20)</button><button type="button" data-ok="0">χ²(3)</button><button type="button" data-ok="0">t(19)</button></div><p class="dwhy" hidden="">一个分类因素、多个均值 → 单因素方差分析，F(k−1, n−k)=F(3,16)。</p></div><div class="dq"><p><span class="dn">22</span>正态总体，n=16，s²=1.44，求总体方差的95%置信区间。</p><div class="dopts"><button type="button" data-ok="1">χ²(15)</button><button type="button" data-ok="0">χ²(16)</button><button type="button" data-ok="0">t(15)</button><button type="button" data-ok="0">F(15,15)</button></div><p class="dwhy" hidden="">方差的区间估计用 χ²，自由度 n−1=15；较大的临界值放在区间下限的分母里。</p></div><div class="dq"><p><span class="dn">23</span>男、女两组对三种口味的偏好是否一致（2×3 列联表）。</p><div class="dopts"><button type="button" data-ok="0">F(1,2)</button><button type="button" data-ok="0">χ²(6)</button><button type="button" data-ok="0">χ²(5)</button><button type="button" data-ok="1">χ²(2)</button></div><p class="dwhy" hidden="">两个分类变量 → χ² 独立性检验，自由度 (r−1)(c−1)=(2−1)(3−1)=2。</p></div></div></div>
+<div id="drill"><div class="dscore"><span id="d-score">已答 0 / 23</span><button type="button" class="linkbtn" id="d-reset">打乱重来</button></div><div class="drill"><div class="dq"><p><span class="dn">1</span>正态总体、n=10，求 σ² 的95%置信区间。区间下限 (n−1)s²/(?)</p><div class="dopts"><button type="button" data-ok="0">χ²₀.₀₅(9)=16.919</button><button type="button" data-ok="1">χ²₀.₀₂₅(9)=19.023</button><button type="button" data-ok="0">χ²₀.₉₇₅(9)=2.700</button><button type="button" data-ok="0">χ²₀.₀₂₅(10)=20.483</button></div><p class="dwhy" hidden="">下限的分母用较大的临界值（上侧 0.025 分位数），上限用较小的 χ²₀.₉₇₅(9)=2.700；自由度 n−1=9。</p></div><div class="dq"><p><span class="dn">2</span>检验得到 P 值 = 0.03，显著性水平 α=0.01，结论是？</p><div class="dopts"><button type="button" data-ok="0">无法判断</button><button type="button" data-ok="0">接受 H₁</button><button type="button" data-ok="1">不拒绝 H₀</button><button type="button" data-ok="0">拒绝 H₀</button></div><p class="dwhy" hidden="">P 值不小于 α 就不拒绝 H₀（0.03 &gt; 0.01）；同样的 P 值在 α=0.05 时就会拒绝。</p></div><div class="dq"><p><span class="dn">3</span>正态总体、σ 未知、n=16，求均值的95%置信区间，临界值取？</p><div class="dopts"><button type="button" data-ok="0">z₀.₀₂₅=1.96</button><button type="button" data-ok="0">t₀.₀₅(15)=1.753</button><button type="button" data-ok="1">t₀.₀₂₅(15)=2.131</button><button type="button" data-ok="0">t₀.₀₂₅(16)=2.120</button></div><p class="dwhy" hidden="">区间估计是双侧的：用 α/2=0.025；自由度 n−1=15。</p></div><div class="dq"><p><span class="dn">4</span>四种广告方式，共 20 个观测值，检验各方式的平均销量是否相同。</p><div class="dopts"><button type="button" data-ok="1">F(3,16)</button><button type="button" data-ok="0">F(4,20)</button><button type="button" data-ok="0">t(19)</button><button type="button" data-ok="0">χ²(3)</button></div><p class="dwhy" hidden="">一个分类因素、多个均值 → 单因素方差分析，F(k−1, n−k)=F(3,16)。</p></div><div class="dq"><p><span class="dn">5</span>多元回归有 3 个自变量、15 个观测值，检验回归方程整体是否显著。</p><div class="dopts"><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="1">F(3,11)</button><button type="button" data-ok="0">F(3,14)</button><button type="button" data-ok="0">F(2,12)</button></div><p class="dwhy" hidden="">F(k, n−k−1)=F(3,11)，2025年计算题就是这个。</p></div><div class="dq"><p><span class="dn">6</span>检验两个正态总体的方差是否相等。</p><div class="dopts"><button type="button" data-ok="0">t(n₁+n₂−2)</button><button type="button" data-ok="1">F(n₁−1, n₂−1)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">χ²(n−1)</button></div><p class="dwhy" hidden="">两方差之比用 F=s₁²/s₂²。</p></div><div class="dq"><p><span class="dn">7</span>H₀：μ=100，H₁：μ≠100，α=0.05，σ 已知。拒绝域是？</p><div class="dopts"><button type="button" data-ok="0">|z| &gt; 1.645</button><button type="button" data-ok="1">|z| &gt; 1.96</button><button type="button" data-ok="0">z &lt; −1.645</button><button type="button" data-ok="0">z &gt; 1.96</button></div><p class="dwhy" hidden="">双侧检验把 α 平分到两侧，每侧 0.025，临界值 z₀.₀₂₅=1.96。</p></div><div class="dq"><p><span class="dn">8</span>总体分布未知，n=12，σ 未知，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="1">条件不足：需要正态假定或更大的样本</button><button type="button" data-ok="0">χ²(11)</button></div><p class="dwhy" hidden="">小样本且总体不一定正态时，Z 和 t 都没有依据。考题一般会写明"服从正态分布"。</p></div><div class="dq"><p><span class="dn">9</span>总体分布未知，n=64，样本标准差 s=12，估计总体均值。</p><div class="dopts"><button type="button" data-ok="0">χ²(63)</button><button type="button" data-ok="1">Z：x̄ ± z·s/√n</button><button type="button" data-ok="0">t(63)</button><button type="button" data-ok="0">条件不足</button></div><p class="dwhy" hidden="">大样本（n≥30）时由中心极限定理，σ 未知用 s 代替，仍按 Z 处理（此时 t(63) 与 Z 几乎相同）。</p></div><div class="dq"><p><span class="dn">10</span>H₀：μ≥100，H₁：μ&lt;100，α=0.05，正态总体、σ 已知。拒绝域是？</p><div class="dopts"><button type="button" data-ok="1">z &lt; −1.645</button><button type="button" data-ok="0">z &gt; 1.645</button><button type="button" data-ok="0">|z| &gt; 1.96</button><button type="button" data-ok="0">z &lt; −1.96</button></div><p class="dwhy" hidden="">拒绝域跟着 H₁ 走：H₁ 是"&lt;"，拒绝域在左侧；单侧检验用 z₀.₀₅=1.645，不用 1.96。</p></div><div class="dq"><p><span class="dn">11</span>检验一枚骰子六个点数出现的频数是否符合均匀分布。</p><div class="dopts"><button type="button" data-ok="0">χ²(6)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">F(5,6)</button><button type="button" data-ok="1">χ²(5)</button></div><p class="dwhy" hidden="">拟合优度检验，自由度 = 类别数 − 1 = 5。</p></div><div class="dq"><p><span class="dn">12</span>随机调查 400 人，其中 120 人支持，求支持率的95%置信区间。</p><div class="dopts"><button type="button" data-ok="0">Z：p ± z√(π₀(1−π₀)/n)</button><button type="button" data-ok="0">χ²(399)</button><button type="button" data-ok="1">Z：p ± z√(p(1−p)/n)</button><button type="button" data-ok="0">t(399)</button></div><p class="dwhy" hidden="">比例的区间估计用 Z，标准误里用样本比例 p；检验时才用 π₀。</p></div><div class="dq"><p><span class="dn">13</span>n=20，样本相关系数 r=0.6，检验总体相关系数是否为0。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="1">t(18)</button><button type="button" data-ok="0">t(19)</button><button type="button" data-ok="0">F(1,19)</button></div><p class="dwhy" hidden="">t=|r|√((n−2)/(1−r²))∼t(n−2)=t(18)。</p></div><div class="dq"><p><span class="dn">14</span>同一批 15 名学生，培训前后各测一次成绩，检验培训是否有效。</p><div class="dopts"><button type="button" data-ok="0">F(14,14)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="1">匹配样本 t(14)</button><button type="button" data-ok="0">两独立样本 t(28)</button></div><p class="dwhy" hidden="">前后成绩一一对应，是匹配样本：对差值做单样本 t 检验，自由度 n−1=14。</p></div><div class="dq"><p><span class="dn">15</span>一元线性回归，n=12，检验线性关系是否显著。</p><div class="dopts"><button type="button" data-ok="0">χ²(10)</button><button type="button" data-ok="1">F(1,10)，等价于 t(10)</button><button type="button" data-ok="0">t(11)</button><button type="button" data-ok="0">F(2,10)</button></div><p class="dwhy" hidden="">一元回归 F=MSR/MSE∼F(1, n−2)，与 t(n−2) 检验等价（F=t²）。</p></div><div class="dq"><p><span class="dn">16</span>检验某正态总体的方差是否等于 σ₀²。</p><div class="dopts"><button type="button" data-ok="0">t(n−1)</button><button type="button" data-ok="0">F(n−1,n−1)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="1">χ²(n−1)</button></div><p class="dwhy" hidden="">一个正态总体方差的检验用 χ²=(n−1)s²/σ₀²。</p></div><div class="dq"><p><span class="dn">17</span>正态总体，n=16，s²=1.44，求总体方差的95%置信区间。</p><div class="dopts"><button type="button" data-ok="0">t(15)</button><button type="button" data-ok="0">F(15,15)</button><button type="button" data-ok="0">χ²(16)</button><button type="button" data-ok="1">χ²(15)</button></div><p class="dwhy" hidden="">方差的区间估计用 χ²，自由度 n−1=15；较大的临界值放在区间下限的分母里。</p></div><div class="dq"><p><span class="dn">18</span>男、女两组对三种口味的偏好是否一致（2×3 列联表）。</p><div class="dopts"><button type="button" data-ok="1">χ²(2)</button><button type="button" data-ok="0">χ²(5)</button><button type="button" data-ok="0">χ²(6)</button><button type="button" data-ok="0">F(1,2)</button></div><p class="dwhy" hidden="">两个分类变量 → χ² 独立性检验，自由度 (r−1)(c−1)=(2−1)(3−1)=2。</p></div><div class="dq"><p><span class="dn">19</span>两个正态总体，方差未知但相等，n₁=10、n₂=8，比较两个总体均值。</p><div class="dopts"><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">F(9,7)</button><button type="button" data-ok="0">t(17)</button><button type="button" data-ok="1">合并方差 t(16)</button></div><p class="dwhy" hidden="">小样本且方差相等 → 合并方差 t，自由度 n₁+n₂−2=16（2022年计算题就是这种）。</p></div><div class="dq"><p><span class="dn">20</span>两个独立大样本（n₁=80，n₂=100），比较两个总体均值。</p><div class="dopts"><button type="button" data-ok="0">t(178)</button><button type="button" data-ok="0">χ²(1)</button><button type="button" data-ok="0">F(79,99)</button><button type="button" data-ok="1">Z</button></div><p class="dwhy" hidden="">两个独立大样本用 Z，标准误为 √(s₁²/n₁+s₂²/n₂)。</p></div><div class="dq"><p><span class="dn">21</span>总体服从正态分布，σ 未知，n=16，s=4，估计总体均值。</p><div class="dopts"><button type="button" data-ok="1">t(15)</button><button type="button" data-ok="0">Z</button><button type="button" data-ok="0">t(16)</button><button type="button" data-ok="0">χ²(15)</button></div><p class="dwhy" hidden="">正态总体、小样本、σ 未知 → t 分布，自由度 n−1=15。</p></div><div class="dq"><p><span class="dn">22</span>某零件长度服从正态分布，总体标准差 σ=0.5 已知，抽取 n=10 件，求均值的95%置信区间。</p><div class="dopts"><button type="button" data-ok="1">Z：x̄ ± z·σ/√n</button><button type="button" data-ok="0">t(9)：x̄ ± t·s/√n</button><button type="button" data-ok="0">条件不足</button><button type="button" data-ok="0">χ²(9)</button></div><p class="dwhy" hidden="">总体正态且 σ 已知，不论样本大小都用 Z。</p></div><div class="dq"><p><span class="dn">23</span>检验 H₀：π=0.3，样本 n=400，样本比例 p=0.34。</p><div class="dopts"><button type="button" data-ok="0">t(399)</button><button type="button" data-ok="0">χ²(1)</button><button type="button" data-ok="1">Z，分母用 √(π₀(1−π₀)/n)</button><button type="button" data-ok="0">Z，分母用 √(p(1−p)/n)</button></div><p class="dwhy" hidden="">检验是在 H₀ 成立的前提下构造统计量，所以分母用 π₀。</p></div></div></div>
 
 
 
@@ -8387,7 +8387,7 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <h2>冲刺期：效率、状态和睡眠</h2>
 
-<p>最后五周拼的不是哪一天多学了一小时，而是<strong>每一天都能正常发挥</strong>。这一节回答四个问题：为什么学着学着效率就低了、很困却睡不着是怎么回事、冲刺期怎么学更省力、怎么确认自己在进步。</p>
+<p>最后五周拼的不是哪一天多学了一小时，而是<strong>每一天都能正常发挥</strong>。这一节依次讲：为什么学着学着效率就低了、很困却睡不着是怎么回事、冲刺期怎么学更省力、怎么确认自己在进步、最后五周每周到哪一步、四件容易忽略的小事。</p>
 
 <h3>为什么学着学着效率就低了</h3>
 
@@ -8554,6 +8554,122 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 </ol>
 
 <p>每周日看一眼这一周：三个数里有两个在涨或者持平，就是在进步，不用改计划；连着一周都在掉，先查睡眠，再减任务量。<strong>看周，不看天</strong>：个别几天掉下来是正常的。把进度记下来的人，目标完成得更好，写在纸上比只在心里记效果更明显（Harkin 等，2016）。</p>
+
+<h3>最后五周，每周到哪一步</h3>
+
+<p>下面是参考线，按自己的实际进度前后挪。每周日复盘时对一下：到了，就照常往下走；没到，看后面的"落后了怎么办"。</p>
+
+<p><strong>11月11–15日</strong></p>
+
+<ul>
+
+<li>数学：概率论强化收尾（15日截止）；高数、线代真题的选择填空保温</li>
+
+<li>432：背诵新题每天约4道；计算卡片跟着数三进度；"串讲"看完第6、7、8章</li>
+
+<li>英语：每天1篇真题阅读精读 + 5个长句</li>
+
+<li>政治：史纲收尾</li>
+
+</ul>
+
+<p><strong>11月16–22日</strong></p>
+
+<ul>
+
+<li>数学：真题两天一套，约3套</li>
+
+<li>432：<strong>22日前背诵第一轮全部学完</strong>；2021–2026年计算题按题型过一遍</li>
+
+<li>英语：开始写作文，每周2篇，手写计时</li>
+
+<li>政治：思修法基收尾；选择题套卷每周1–2套</li>
+
+</ul>
+
+<p><strong>11月23–29日</strong></p>
+
+<ul>
+
+<li>数学：真题继续，约3套</li>
+
+<li>432：每周1套整卷（下午2–5点限时）；论述每周3个提纲 + 1篇全文</li>
+
+<li>英语：阅读照常；新题型、翻译每周各2篇</li>
+
+<li>政治：选择题错题二刷；套卷照常</li>
+
+</ul>
+
+<p><strong>11月30日–12月6日</strong></p>
+
+<ul>
+
+<li>数学：真题收尾，开始模拟卷</li>
+
+<li>432：整卷每周1–2套</li>
+
+<li>英语：作文模板定稿</li>
+
+<li>政治：押题卷选择题；开始背分析题</li>
+
+</ul>
+
+<p><strong>12月7–13日</strong></p>
+
+<ul>
+
+<li>数学：模拟卷2套 + 每天看错题本</li>
+
+<li>432：12月10日起进入"最后9天"，每道背诵题再过一遍</li>
+
+<li>英语：真题二刷；默写作文模板</li>
+
+<li>政治：分析题每天1.5–2小时</li>
+
+</ul>
+
+<p><strong>12月14–18日</strong></p>
+
+<ul>
+
+<li>数学：只看错题本和公式，不做新卷</li>
+
+<li>432：骨架、公式、通勤听</li>
+
+<li>英语：每天1篇阅读保持手感</li>
+
+<li>政治：分析题 + 时政</li>
+
+</ul>
+
+<p><strong>两次全真模拟</strong>：12月5–6日和12月12–13日这两个周末，完全按考试的顺序和钟点做四套卷：第一天上午8:30–11:30政治，下午14:00–17:00英语；第二天上午数学，下午432。午饭、午休、带什么文具都按考试那天来。目的不是分数，是提前知道连考两天哪里会出问题：第二天下午还有没有力气、哪一科时间不够、中午怎么歇。</p>
+
+<p><strong>落后了怎么办：先保，后砍，不顺延。</strong> 落后的任务一天天往后推，只会越积越多。某一科落后超过两天，周日复盘时直接砍：</p>
+
+<ul>
+
+<li><strong>每天不动的</strong>：432"今日复习"和一组计算；数学真题的选择填空和中档解答题；政治选择题；英语阅读。</li>
+
+<li><strong>可以砍的</strong>：数学每套最后一两道难题的第二问；432"背诵"页里没有"常考"标记的题先只背骨架；英语完形和新题型不再加量；政治不再回头看课，直接用选择题带知识点。</li>
+
+<li><strong>不能砍的</strong>：睡眠和每周半天休息。砍了它们，后面每一天的效率都要打折。</li>
+
+</ul>
+
+<h3>四件容易忽略的小事</h3>
+
+<ul>
+
+<li><strong>每段结束，合上书回忆2分钟。</strong> 在草稿纸上写下这一段学了哪几点、哪一步卡住了。这是成本最低的主动回忆：实验里，学完后做回忆练习的学生，一周后的成绩明显高于把内容整理成概念图的学生（Karpicke 和 Blunt，2011）。写不出来的地方，就是下一段的开头。</li>
+
+<li><strong>每天动笔写。</strong> 四科都是手写、限时。心里答得出来、在手机上点了"会"，不等于纸上写得出来、写得完。每天至少手写一道432简答（限时6分钟），每周手写一篇论述全文（限时20分钟），看时间够不够、字迹清不清楚。</li>
+
+<li><strong>发昏先透气。</strong> 冬天自习室门窗紧闭、人又多，二氧化碳浓度会升高。有实验发现，浓度高到一定程度，人做判断和决策的表现会变差（Satish 等，2012）；后来的研究结论不完全一致，但休息时出门透两分钟气没有任何成本。下午发昏，先想想是不是该出去透口气。</li>
+
+<li><strong>别生病。</strong> 12月病一场，少的是三五天。睡够本身就是预防：一项实验给健康人滴了感冒病毒，平时每晚睡不到6小时的人，得感冒的可能性是睡7小时以上的人的四倍左右（Prather 等，2015）。另外勤洗手，人多的地方戴口罩，出汗后别吹风；还没打流感疫苗的可以去打。</li>
+
+</ul>
 
 <h2>常见卡点：原因和办法</h2>
 
@@ -9845,7 +9961,7 @@ html:not(.js) .dopts button[data-ok="1"]::after{content:"  ✓ 正确答案";fon
 
 <h2>参考研究</h2>
 
-<p class="refs">Dunlosky 等（2013），十种学习方法的效果评估，Psychological Science in the Public Interest · Roediger &amp; Karpicke（2006），测试效应，Psychological Science · Cepeda 等（2008），复习间隔与保持时间，Psychological Science · Rawson &amp; Dunlosky（2011），连续再学习，Journal of Experimental Psychology: General · Bransford &amp; Johnson（1972），理解的情境前提，Journal of Verbal Learning and Verbal Behavior · Bower 等（1969），层次组织与回忆，Journal of Verbal Learning and Verbal Behavior · Rohrer &amp; Taylor（2007），数学题交错练习，Instructional Science · Diekelmann &amp; Born（2010），睡眠与记忆巩固，Nature Reviews Neuroscience · Cowan（2001），工作记忆容量 · Gollwitzer &amp; Sheeran（2006），执行意图的元分析 · Wohl、Pychyl &amp; Bennett（2010），自我原谅与拖延 · Ramirez &amp; Beilock（2011），考前书写与考试焦虑，Science · Jamieson 等（2010），对紧张的重新评价 · Chang 等（2012），一次有氧运动与认知的元分析 · Albulescu 等（2022），短休息的元分析 · Berman、Jonides &amp; Kaplan（2008），自然环境与注意力恢复 · Drake 等（2013），咖啡因与睡眠 · Leroy（2009），注意力残留 · Ward 等（2017），手机在场与认知资源（后续的重复研究结果不完全一致）· Buehler、Griffin &amp; Ross（1994），计划谬误 · Van Dongen 等（2003），长期少睡的累积影响，Sleep · Spiegel 等（2004），睡眠不足与食欲，Annals of Internal Medicine · Brooks &amp; Lack（2006），午睡时长，Sleep · Monk（2005），午后低谷，Clinics in Sports Medicine · Thayer（1987），甜食与快走对精力的影响，Journal of Personality and Social Psychology · Wood &amp; Neal（2007），习惯与情境，Psychological Review · Eysenck 等（2007），焦虑与注意控制，Emotion · Szpunar、Khan &amp; Schacter（2013），穿插小测减少走神，PNAS · Khalsa 等（2003），光照对生物钟的相位反应，Journal of Physiology · Borbély（1982），睡眠调节的双过程模型，Human Neurobiology · Espie 等（2006），失眠中的"注意—意图—努力"，Sleep Medicine Reviews · Scullin 等（2018），睡前写待办清单与入睡快慢，Journal of Experimental Psychology: General · Chang 等（2015），睡前使用发光电子阅读器与睡眠，PNAS · Yoo 等（2007），缺觉与新记忆的形成，Nature Neuroscience · Gais、Lucas &amp; Born（2006），学习后睡眠与记忆，Learning &amp; Memory · Ariga &amp; Lleras（2011），短暂打断与注意力保持，Cognition · Biwer 等（2023），按钟点休息与自己决定休息，British Journal of Educational Psychology · Ericsson 等（1993），刻意练习，Psychological Review · Harvey（2002），失眠的认知模型，Behaviour Research and Therapy · Bootzin（1972），失眠的刺激控制，APA 年会论文集 · Carney &amp; Waters（2006），睡前写下担心和对策，Behavioral Sleep Medicine · Haghayegh 等（2019），睡前热水浴与入睡，Sleep Medicine Reviews · Jansson-Fröjmark 等（2022），矛盾意向法治疗失眠的汇总分析，Journal of Sleep Research · Harvey &amp; Payne（2002），用想象画面应对睡前杂念，Behaviour Research and Therapy · Tang、Schmidt &amp; Harvey（2007），夜里看钟与失眠，Journal of Behavior Therapy and Experimental Psychiatry · Qaseem 等（2016），成人慢性失眠的治疗指南，Annals of Internal Medicine · Harkin 等（2016），记录进度与目标达成，Psychological Bulletin。</p></section>
+<p class="refs">Dunlosky 等（2013），十种学习方法的效果评估，Psychological Science in the Public Interest · Roediger &amp; Karpicke（2006），测试效应，Psychological Science · Cepeda 等（2008），复习间隔与保持时间，Psychological Science · Rawson &amp; Dunlosky（2011），连续再学习，Journal of Experimental Psychology: General · Bransford &amp; Johnson（1972），理解的情境前提，Journal of Verbal Learning and Verbal Behavior · Bower 等（1969），层次组织与回忆，Journal of Verbal Learning and Verbal Behavior · Rohrer &amp; Taylor（2007），数学题交错练习，Instructional Science · Diekelmann &amp; Born（2010），睡眠与记忆巩固，Nature Reviews Neuroscience · Cowan（2001），工作记忆容量 · Gollwitzer &amp; Sheeran（2006），执行意图的元分析 · Wohl、Pychyl &amp; Bennett（2010），自我原谅与拖延 · Ramirez &amp; Beilock（2011），考前书写与考试焦虑，Science · Jamieson 等（2010），对紧张的重新评价 · Chang 等（2012），一次有氧运动与认知的元分析 · Albulescu 等（2022），短休息的元分析 · Berman、Jonides &amp; Kaplan（2008），自然环境与注意力恢复 · Drake 等（2013），咖啡因与睡眠 · Leroy（2009），注意力残留 · Ward 等（2017），手机在场与认知资源（后续的重复研究结果不完全一致）· Buehler、Griffin &amp; Ross（1994），计划谬误 · Van Dongen 等（2003），长期少睡的累积影响，Sleep · Spiegel 等（2004），睡眠不足与食欲，Annals of Internal Medicine · Brooks &amp; Lack（2006），午睡时长，Sleep · Monk（2005），午后低谷，Clinics in Sports Medicine · Thayer（1987），甜食与快走对精力的影响，Journal of Personality and Social Psychology · Wood &amp; Neal（2007），习惯与情境，Psychological Review · Eysenck 等（2007），焦虑与注意控制，Emotion · Szpunar、Khan &amp; Schacter（2013），穿插小测减少走神，PNAS · Khalsa 等（2003），光照对生物钟的相位反应，Journal of Physiology · Borbély（1982），睡眠调节的双过程模型，Human Neurobiology · Espie 等（2006），失眠中的"注意—意图—努力"，Sleep Medicine Reviews · Scullin 等（2018），睡前写待办清单与入睡快慢，Journal of Experimental Psychology: General · Chang 等（2015），睡前使用发光电子阅读器与睡眠，PNAS · Yoo 等（2007），缺觉与新记忆的形成，Nature Neuroscience · Gais、Lucas &amp; Born（2006），学习后睡眠与记忆，Learning &amp; Memory · Ariga &amp; Lleras（2011），短暂打断与注意力保持，Cognition · Biwer 等（2023），按钟点休息与自己决定休息，British Journal of Educational Psychology · Ericsson 等（1993），刻意练习，Psychological Review · Harvey（2002），失眠的认知模型，Behaviour Research and Therapy · Bootzin（1972），失眠的刺激控制，APA 年会论文集 · Carney &amp; Waters（2006），睡前写下担心和对策，Behavioral Sleep Medicine · Haghayegh 等（2019），睡前热水浴与入睡，Sleep Medicine Reviews · Jansson-Fröjmark 等（2022），矛盾意向法治疗失眠的汇总分析，Journal of Sleep Research · Harvey &amp; Payne（2002），用想象画面应对睡前杂念，Behaviour Research and Therapy · Tang、Schmidt &amp; Harvey（2007），夜里看钟与失眠，Journal of Behavior Therapy and Experimental Psychiatry · Qaseem 等（2016），成人慢性失眠的治疗指南，Annals of Internal Medicine · Harkin 等（2016），记录进度与目标达成，Psychological Bulletin · Karpicke &amp; Blunt（2011），回忆练习与概念图，Science · Satish 等（2012），室内二氧化碳浓度与决策表现，Environmental Health Perspectives · Prather 等（2015），睡眠时长与感冒易感性，Sleep。</p></section>
 
     <section class="sec prose" id="sec-gk" role="tabpanel" aria-labelledby="tab-gk"><h1 class="sec-title">八、各科方法</h1><h2>先看这里</h2>
 
